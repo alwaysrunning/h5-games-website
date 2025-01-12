@@ -8,7 +8,7 @@ export default function TermsPage() {
             By accessing or using this website, you agree to be bound by this agreement and our privacy policy terms. This agreement shall remain in full force and effect while you use this website.
           </p>
           <p className="mb-4">
-            This website makes no promises that the use of our services will improve visitors' gaming skills or abilities. We do not guarantee the accuracy of any information contained within our website or the accuracy of information contained in any third-party websites we link to.
+            This website makes no promises that the use of our services will improve visitors&apos; gaming skills or abilities. We do not guarantee the accuracy of any information contained within our website or the accuracy of information contained in any third-party websites we link to.
           </p>
           <p className="mb-4">
             The information contained on our website is provided for reference and entertainment purposes only. We are not responsible for any content provided by third parties (such as games, advertisements, etc.).

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Game } from '@/data/games';
 
 export default function GameCard({ game, onSelect }: { game: Game; onSelect: (game: Game) => void }) {

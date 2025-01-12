@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { games } from '@/data/games';
 import GameCard from '../components/GameCard';
 
-export default function GamesPage() {
+function GamesList() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   const [filteredGames, setFilteredGames] = useState(games);
@@ -24,7 +24,7 @@ export default function GamesPage() {
       
       {query && (
         <p className="mb-4 text-gray-600 dark:text-gray-300">
-          Search results for "{query}": {filteredGames.length} games
+          {`Search results for "${query}": ${filteredGames.length} games`}
         </p>
       )}
 
@@ -46,5 +46,13 @@ export default function GamesPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function GamesPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <GamesList />
+    </Suspense>
   );
 } 

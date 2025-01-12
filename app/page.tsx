@@ -1,14 +1,23 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { games } from '@/data/games';
 import GameCard from './components/GameCard';
 import FullscreenButton from './components/FullscreenButton';
 
 export default function Home() {
-  const router = useRouter();
+  //const router = useRouter();
+  return (
+    <Suspense fallback={<div>Loading game data...</div>}>
+      <GameContentInner />
+    </Suspense>
+  );
+}
+
+function GameContentInner() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const [selectedGame, setSelectedGame] = useState(
     games.find(game => game.id === searchParams.get('game')) || 
     games.find(game => game.featured)
