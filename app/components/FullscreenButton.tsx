@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 export default function FullscreenButton() {
@@ -7,10 +6,6 @@ export default function FullscreenButton() {
     if (iframe) {
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
-      } else if ((iframe as any).webkitRequestFullscreen) {
-        (iframe as any).webkitRequestFullscreen();
-      } else if ((iframe as any).mozRequestFullScreen) {
-        (iframe as any).mozRequestFullScreen();
       }
     }
   };
