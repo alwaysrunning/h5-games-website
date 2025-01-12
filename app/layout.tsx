@@ -2,6 +2,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import Link from 'next/link'
+import { Analytics } from "@vercel/analytics/react"
+
 // import { games } from '../data/games'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -105,6 +107,7 @@ export default function RootLayout({
             </nav>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   )
