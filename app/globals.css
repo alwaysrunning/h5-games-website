@@ -3,19 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f9fa;
+  --foreground: #2d3748;
+  --primary: #4a90e2;
+  --secondary: #f7fafc;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1a202c;
+    --foreground: #e2e8f0;
+    --primary: #63b3ed;
+    --secondary: #2d3748;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+// 添加一些自定义工具类
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+@layer components {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
 }
