@@ -1,39 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 import { Game } from '@/data/games';
 
-export default function GameCard({ game, onSelect }: { game: Game; onSelect: (game: Game) => void }) {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Game',
-    name: game.title,
-    description: game.description,
-    image: game.thumbnail,
-    genre: game.category,
-    url: `https://your-domain.com/games/${game.id}`,
-    inLanguage: 'en',
-    isAccessibleForFree: true,
-    applicationCategory: 'Game',
-  };
+interface GameCardProps {
+  game: Game;
+}
 
+export default function GameCard({ game }: GameCardProps) {
   return (
     <div 
-      className="relative group cursor-pointer" 
-      onClick={() => onSelect(game)}
-    >
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <div className="aspect-[16/9] w-full rounded-lg overflow-hidden">
-        <img
-          src={game.thumbnail}
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow"
+      onClick={() => {
+        window.open(`/games/${game.id}`, '_blank');
+      }}>
+      <div className="aspect-[16/9] relative mb-2">
+        <img 
+          src={game.thumbnail} 
           alt={game.title}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          className="w-full h-full object-cover rounded"
         />
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <h3 className="text-white text-lg font-semibold">{game.title}</h3>
-        </div>
       </div>
+      <h3 className="font-semibold text-gray-800 dark:text-white">
+        {game.title}
+      </h3>
     </div>
   );
 } 

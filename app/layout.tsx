@@ -8,69 +8,70 @@ import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] })
 
-// export async function generateMetadata({
-//   params,
-//   searchParams,
-// }: {
-//   params: { [key: string]: string }
-//   searchParams: { [key: string]: string | string[] | undefined }
-// }): Promise<Metadata> {
-//   console.log('Search Params:', params); // 调试用
-//   const gameId = searchParams?.game as string;
-//   if (!gameId) {
-//     console.log('No game ID provided');
-//   }
-//   const game = games.find(game => game.id === gameId);
-//   // 从游戏数据生成关键词
-//   const title = game ? game.title : 'HTML5 Games - Free Online Gaming Platform';
-//   const description = game ? game.description : 'Enjoy HTML5 games online for free!';
-//   const keywords = game ? game.description : 'Enjoy HTML5 games online for free!';
+export async function generateMetadata({
+  params,
+}: {
+  params: { [key: string]: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}) {
+  console.log('Search Params:', params); // 调试用
 
-//   return {
-//     metadataBase: new URL('https://your-domain.com'),
-//     title,
-//     description,
-//     keywords,
-//     openGraph: {
-//       title,
-//       description,
-//       type: 'website',
-//       siteName: 'HTML5 Games',
-//       locale: 'en_US',
-//       images: [
-//         {
-//           url: '/og-image.jpg',
-//           width: 1200,
-//           height: 630,
-//           alt: 'HTML5 Games Preview'
-//         }
-//       ]
-//     },
-//     twitter: {
-//       card: 'summary_large_image',
-//       title,
-//       description,
-//       images: ['/og-image.jpg'],
-//     },
-//     robots: {
-//       index: true,
-//       follow: true,
-//       googleBot: {
-//         index: true,
-//         follow: true,
-//         'max-video-preview': -1,
-//         'max-image-preview': 'large',
-//         'max-snippet': -1,
-//       },
-//     },
-//     verification: {
-//       google: 'your-google-verification-code',
-//     },
-//     alternates: {
-//       canonical: 'https://your-domain.com',
-//     }
-//   }
-// }
+
+  // 优化关键词，使用数组格式并添加更多相关词
+  const baseKeywords = ['HTML5 games', 'online games', 'free games', 'browser games', 'web games'];
+
+
+  // 优化标题格式
+  const title = 'HTML5 Games - Play Free Online Games in Your Browser';
+  
+  // 优化描述，确保长度在150-160字符之间
+  const description = 'Discover and play the best free HTML5 games online. No downloads required, just open and play directly in your browser!';
+
+  return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://your-domain.com'),
+    title,
+    description,
+    keywords: baseKeywords.join(', '),
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      siteName: 'HTML5 Games',
+      locale: 'en_US',
+      // images: [
+      //   {
+      //     url: game?.image || '/og-image.jpg',
+      //     width: 1200,
+      //     height: 630,
+      //     alt: game ? `Play ${game.title} - HTML5 Games` : 'HTML5 Games Preview'
+      //   }
+      // ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/og-image.jpg'],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    verification: {
+      google: 'your-google-verification-code',
+    },
+    alternates: {
+      canonical: 'https://your-domain.com',
+    }
+  }
+}
 
 export default function RootLayout({
   children,
