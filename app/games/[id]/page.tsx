@@ -8,7 +8,7 @@ type Props = {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
+  const { id } = params;
   const game = games.find(g => g.id === id);
   
   if (!game) {
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function GameDetail({ params }: Props) {
-  const { id } = await params;
+  const { id } = params;
   const game = games.find(g => g.id === id);
 
   if (!game) {
