@@ -32,7 +32,6 @@ export default function FullscreenButton() {
         <path d="M3 16v3a2 2 0 0 0 2 2h3"></path>
         <path d="M16 21h3a2 2 0 0 0 2-2v-3"></path>
       </svg>
-      Fullscreen
     </button>
   );
 } 
