@@ -4,7 +4,8 @@ import { games } from '@/data/games';
 import FullscreenButton from '@/app/components/FullscreenButton';
 
 type Props = {
-  params: { id: string }
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -24,7 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function GameDetail({ params }: Props) {
+export default async function GameDetail({ params, searchParams }: Props) {
+  console.log(searchParams);
   const { id } = params;
   const game = games.find(g => g.id === id);
 
