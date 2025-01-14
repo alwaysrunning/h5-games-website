@@ -3,13 +3,17 @@ import { notFound } from 'next/navigation';
 import { games } from '@/data/games';
 import FullscreenButton from '@/app/components/FullscreenButton';
 
-type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
+// type Props = {
+//   params: {
+//     id: string;
+//   };
+//   searchParams?: { [key: string]: string | string[] | undefined };
+// }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = params;
+export async function generateMetadata(
+  { params }: { params: Promise<{ id: string }> }
+): Promise<Metadata> {
+  const { id } = await params;
   const game = games.find(g => g.id === id);
   
   if (!game) {
@@ -25,9 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function GameDetail({ params, searchParams }: Props) {
-  console.log(searchParams);
-  const { id } = params;
+export default async function GameDetail({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
   const game = games.find(g => g.id === id);
 
   if (!game) {
