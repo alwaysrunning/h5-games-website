@@ -1,11 +1,28 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 export default function FullscreenButton() {
   const handleFullscreen = () => {
     const iframe = document.querySelector('iframe');
     if (iframe) {
-      if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
+      try {
+        // 尝试使用标准的 Fullscreen API
+        if (iframe.requestFullscreen) {
+          iframe.requestFullscreen();
+        // webkit 前缀版本 (Safari)
+        } else if ((iframe as any).webkitRequestFullscreen) {
+          (iframe as any).webkitRequestFullscreen();
+        // mozilla 前缀版本
+        } else if ((iframe as any).mozRequestFullScreen) {
+          (iframe as any).mozRequestFullScreen();
+        // ms 前缀版本
+        } else if ((iframe as any).msRequestFullscreen) {
+          (iframe as any).msRequestFullscreen();
+        } else {
+          console.log('当前浏览器不支持全屏功能');
+        }
+      } catch (error) {
+        console.error('进入全屏模式时发生错误:', error);
       }
     }
   };
