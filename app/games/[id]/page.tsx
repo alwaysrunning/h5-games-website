@@ -25,6 +25,7 @@ export async function generateMetadata(
 
   const title = `${game.title} - Unblock H5 Games`;
   const description = game.description;
+  const keywords = `${game.title}, ${game.description}, online game, html5 game`;
   const url = `https://unblockh5games.com/games/${id}`;
   const imageUrl = game.thumbnail || 'https://unblockh5games.com/default-game-image.jpg';
 
@@ -32,7 +33,7 @@ export async function generateMetadata(
     metadataBase: new URL('https://unblockh5games.com'),
     title: title,
     description: description,
-    keywords: `${game.title}, ${game.description}, online game, html5 game`,
+    keywords,
     openGraph: {
       title: title,
       description: description,
@@ -79,7 +80,7 @@ export default async function GameDetail({
           <div className="flex gap-4">
             <ShareButton 
               url={`https://unblockh5games.com/games/${id}`}
-              title={`Play ${game.title} - Unblock H5 Games`}
+              title={`${game.title} - Unblock H5 Games`}
             />
           </div>
         </div>
