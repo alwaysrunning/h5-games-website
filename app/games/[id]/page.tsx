@@ -23,7 +23,7 @@ export async function generateMetadata(
     }
   }
 
-  const title = `Play ${game.title} - Unblock H5 Games`;
+  const title = `${game.title} - Unblock H5 Games`;
   const description = game.description;
   const url = `https://unblockh5games.com/games/${id}`;
   const imageUrl = game.thumbnail || 'https://unblockh5games.com/default-game-image.jpg';
@@ -53,6 +53,8 @@ export async function generateMetadata(
       title: title,
       description: description,
       images: [imageUrl],
+      creator: '@UnblockH5Games',
+      site: '@UnblockH5Games',
     },
   }
 }
