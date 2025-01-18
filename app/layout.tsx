@@ -3,41 +3,41 @@ import './globals.css'
 import Header from './components/Header'
 import Link from 'next/link'
 import { Analytics } from "@vercel/analytics/react"
-import { Metadata } from 'next'
+// import { Metadata } from 'next'
 
 // import { games } from '../data/games'
 
 const inter = Inter({ subsets: ['latin'] })
 
 // 添加网站元数据
-export const metadata: Metadata = {
-  title: {
-    default: 'Unblock H5 Games - Free Online HTML5 Games',
-    template: '%s | Unblock H5 Games'
-  },
-  description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.',
-  keywords: ['online games', 'HTML5 games', 'browser games', 'free games', 'web games', 'no download games', 'mobile games'],
-  authors: [{ name: 'Unblock H5 Games' }],
-  creator: 'Unblock H5 Games',
-  metadataBase: new URL('https://unblockh5games.com'),
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://unblockh5games.com',
-    title: 'Unblock H5 Games - Free Online HTML5 Games',
-    description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.',
-    siteName: 'Unblock H5 Games'
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Unblock H5 Games - Free Online HTML5 Games',
-    description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.'
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
-}
+// export const metadata: Metadata = {
+//   title: {
+//     default: 'Unblock H5 Games - Free Online HTML5 Games',
+//     template: '%s | Unblock H5 Games'
+//   },
+//   description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.',
+//   keywords: ['online games', 'HTML5 games', 'browser games', 'free games', 'web games', 'no download games', 'mobile games'],
+//   authors: [{ name: 'Unblock H5 Games' }],
+//   creator: 'Unblock H5 Games',
+//   metadataBase: new URL('https://unblockh5games.com'),
+//   openGraph: {
+//     type: 'website',
+//     locale: 'en_US',
+//     url: 'https://unblockh5games.com',
+//     title: 'Unblock H5 Games - Free Online HTML5 Games',
+//     description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.',
+//     siteName: 'Unblock H5 Games'
+//   },
+//   twitter: {
+//     card: 'summary_large_image',
+//     title: 'Unblock H5 Games - Free Online HTML5 Games',
+//     description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.'
+//   },
+//   robots: {
+//     index: true,
+//     follow: true
+//   }
+// }
 
 export default function RootLayout({
   children,

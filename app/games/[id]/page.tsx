@@ -23,19 +23,24 @@ export async function generateMetadata(
     }
   }
 
+  const title = `Play ${game.title} - Unblock H5 Games`;
+  const description = game.description;
+  const url = `https://unblockh5games.com/games/${id}`;
+  const imageUrl = game.thumbnail || 'https://unblockh5games.com/default-game-image.jpg';
+
   return {
     metadataBase: new URL('https://unblockh5games.com'),
-    title: `${game.title} - Game Details`,
-    description: game.description,
-    keywords: `${game.title}, ${game.description}`,
+    title: title,
+    description: description,
+    keywords: `${game.title}, ${game.description}, online game, html5 game`,
     openGraph: {
-      title: `${game.title} - Game Details`,
-      description: game.description,
-      url: `/games/${id}`,
+      title: title,
+      description: description,
+      url: url,
       siteName: 'Unblock H5 Games',
       images: [
         {
-          url: game.thumbnail || '/default-game-image.jpg',
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: game.title,
@@ -45,9 +50,9 @@ export async function generateMetadata(
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${game.title} - Game Details`,
-      description: game.description,
-      images: [game.thumbnail || '/default-game-image.jpg'],
+      title: title,
+      description: description,
+      images: [imageUrl],
     },
   }
 }
@@ -71,8 +76,8 @@ export default async function GameDetail({
           <h1 className="text-3xl font-bold">{game.title}</h1>
           <div className="flex gap-4">
             <ShareButton 
-              url={`/games/${id}`} 
-              title={game.title} 
+              url={`https://unblockh5games.com/games/${id}`}
+              title={`Play ${game.title} - Unblock H5 Games`}
             />
           </div>
         </div>
