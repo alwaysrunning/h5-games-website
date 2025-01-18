@@ -24,9 +24,31 @@ export async function generateMetadata(
   }
 
   return {
+    metadataBase: new URL('https://unblockh5games.com'),
     title: `${game.title} - Game Details`,
     description: game.description,
     keywords: `${game.title}, ${game.description}`,
+    openGraph: {
+      title: `${game.title} - Game Details`,
+      description: game.description,
+      url: `/games/${id}`,
+      siteName: 'Unblock H5 Games',
+      images: [
+        {
+          url: game.thumbnail || '/default-game-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: game.title,
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${game.title} - Game Details`,
+      description: game.description,
+      images: [game.thumbnail || '/default-game-image.jpg'],
+    },
   }
 }
 
@@ -49,7 +71,7 @@ export default async function GameDetail({
           <h1 className="text-3xl font-bold">{game.title}</h1>
           <div className="flex gap-4">
             <ShareButton 
-              url={`${process.env.NEXT_PUBLIC_SITE_URL}/games/${params.id}`} 
+              url={`/games/${id}`} 
               title={game.title} 
             />
           </div>
