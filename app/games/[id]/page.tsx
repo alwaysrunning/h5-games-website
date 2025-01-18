@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { games } from '@/data/games';
 import FullscreenButton from '@/app/components/FullscreenButton';
+import ShareButton from '@/app/components/ShareButton';
 
 // type Props = {
 //   params: {
@@ -42,10 +43,18 @@ export default async function GameDetail({
   }
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="max-w-4xl mx-auto text-3xl font-bold text-gray-800 dark:text-white mb-4">
-        {game.title}
-      </h1>
+    <div className="container mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex justify-between items-center mb-4">
+          <h1 className="text-3xl font-bold">{game.title}</h1>
+          <div className="flex gap-4">
+            <ShareButton 
+              url={`${process.env.NEXT_PUBLIC_SITE_URL}/games/${params.id}`} 
+              title={game.title} 
+            />
+          </div>
+        </div>
+      </div>
       
       <div className="max-w-4xl mx-auto w-full aspect-[16/9] bg-white dark:bg-gray-800 rounded-t-xl overflow-hidden shadow-lg">
         <iframe 
