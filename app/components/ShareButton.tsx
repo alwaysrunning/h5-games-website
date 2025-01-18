@@ -17,7 +17,7 @@ interface ShareButtonProps {
 export default function ShareButton({ url, title }: ShareButtonProps) {
   return (
     <div className="flex gap-4">
-        <FacebookShareButton url={url} quote={title}>
+        <FacebookShareButton url={url} title={title}>
             <FacebookIcon size={32} round />
         </FacebookShareButton>
 
