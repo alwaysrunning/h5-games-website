@@ -73,14 +73,14 @@ export default function Header() {
           </div>
 
           {/* 导航链接 */}
-          <nav className="hidden md:flex items-center space-x-4">
+          {/* <nav className="hidden md:flex items-center space-x-4">
             <Link 
               href="/games" 
               className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
             >
               All Games
             </Link>
-          </nav>
+          </nav> */}
         </div>
       </div>
     </header>

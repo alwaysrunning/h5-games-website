@@ -12,26 +12,26 @@ const inter = Inter({ subsets: ['latin'] })
 // 添加网站元数据
 export const metadata: Metadata = {
   title: {
-    default: '你的网站名称',
-    template: '%s | 你的网站名称'
+    default: 'Unblock H5 Games - Free Online HTML5 Games',
+    template: '%s | Unblock H5 Games'
   },
-  description: '在这里添加你的网站描述',
-  keywords: ['关键词1', '关键词2', '关键词3'],
-  authors: [{ name: '你的名字' }],
-  creator: '创建者名称',
-  metadataBase: new URL('https://你的域名.com'),
+  description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.',
+  keywords: ['online games', 'HTML5 games', 'browser games', 'free games', 'web games', 'no download games', 'mobile games'],
+  authors: [{ name: 'Unblock H5 Games' }],
+  creator: 'Unblock H5 Games',
+  metadataBase: new URL('https://unblockh5games.com'),
   openGraph: {
     type: 'website',
-    locale: 'zh_CN',
-    url: 'https://你的域名.com',
-    title: '你的网站名称',
-    description: '在这里添加你的网站描述',
-    siteName: '你的网站名称'
+    locale: 'en_US',
+    url: 'https://unblockh5games.com',
+    title: 'Unblock H5 Games - Free Online HTML5 Games',
+    description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.',
+    siteName: 'Unblock H5 Games'
   },
   twitter: {
     card: 'summary_large_image',
-    title: '你的网站名称',
-    description: '在这里添加你的网站描述'
+    title: 'Unblock H5 Games - Free Online HTML5 Games',
+    description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.'
   },
   robots: {
     index: true,
@@ -45,9 +45,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh">
+    <html lang="en">
       <head>
-        <link rel="canonical" href="https://你的域名.com" />
+        <link rel="canonical" href="https://unblockh5games.com" />
       </head>
       <body className={inter.className}>
         <Header />

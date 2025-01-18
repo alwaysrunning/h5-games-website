@@ -4,9 +4,15 @@ export default function robots() {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/admin/'],
+        disallow: [
+          '/api/',
+          '/admin/',
+          '/*?*',
+          '/search',
+        ],
       },
     ],
-    sitemap: 'https://your-domain.com/sitemap.xml',
+    sitemap: 'https://unblockh5games.com/sitemap.xml',
+    host: 'https://unblockh5games.com',
   }
 } 
