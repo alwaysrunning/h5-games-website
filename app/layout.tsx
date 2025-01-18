@@ -3,11 +3,41 @@ import './globals.css'
 import Header from './components/Header'
 import Link from 'next/link'
 import { Analytics } from "@vercel/analytics/react"
+import { Metadata } from 'next'
 
 // import { games } from '../data/games'
 
 const inter = Inter({ subsets: ['latin'] })
 
+// 添加网站元数据
+export const metadata: Metadata = {
+  title: {
+    default: '你的网站名称',
+    template: '%s | 你的网站名称'
+  },
+  description: '在这里添加你的网站描述',
+  keywords: ['关键词1', '关键词2', '关键词3'],
+  authors: [{ name: '你的名字' }],
+  creator: '创建者名称',
+  metadataBase: new URL('https://你的域名.com'),
+  openGraph: {
+    type: 'website',
+    locale: 'zh_CN',
+    url: 'https://你的域名.com',
+    title: '你的网站名称',
+    description: '在这里添加你的网站描述',
+    siteName: '你的网站名称'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '你的网站名称',
+    description: '在这里添加你的网站描述'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
 
 export default function RootLayout({
   children,
@@ -15,7 +45,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="zh">
+      <head>
+        <link rel="canonical" href="https://你的域名.com" />
+      </head>
       <body className={inter.className}>
         <Header />
         <main className="min-h-screen pt-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800">
