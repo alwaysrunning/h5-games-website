@@ -10,16 +10,16 @@ export interface Game {
 }
 
 export const games: Game[] = [
-  {
-    id: 'tag',
-    title: 'Tag',
-    description: 'TAG is local multiplayer game of catch! Square up against one, two or three of your friends and chase each other around one of three different levels! There are shortcuts you can take to bounce yourself up and away from the chaser as well as a sneaky teleport that can only be used once before it disappears so you can mislead the chaser and waste their time! Who will come out on top?',
-    thumbnail: '/games/tag.jpg',
-    url: 'https://4cbd654e-3f3e-4507-92b1-572521364188.poki-gdn.com/00dae3d4-c760-4f62-a2c5-6ec53808e160/index.html?country=HK&amp;ccpaApplies=0&amp;url_referrer=https%3A%2F%2Fpoki.com%2F&amp;tag=pg-4fb55dceb62efd30c032e2805056958e9a2ba10e&amp;site_id=3&amp;iso_lang=en&amp;poki_url=https%3A%2F%2Fpoki.com%2Fen%2Fg%2Ftag&amp;hoist=yes&amp;nonPersonalized=n&amp;familyFriendly=n&amp;categories=2%2C9%2C48%2C76%2C228%2C750%2C903%2C929%2C1126%2C1140%2C1163%2C1194%2C1197%2C1201&amp;game_id=4cbd654e-3f3e-4507-92b1-572521364188&amp;game_version_id=00dae3d4-c760-4f62-a2c5-6ec53808e160&amp;inspector=0&amp;csp=1',
-    originalUrl: 'https://poki.com/en/g/tag',
-    category: ['music', 'creative'],
-    featured: true,
-  },
+  // {
+  //   id: 'tag',
+  //   title: 'Tag',
+  //   description: 'TAG is local multiplayer game of catch! Square up against one, two or three of your friends and chase each other around one of three different levels! There are shortcuts you can take to bounce yourself up and away from the chaser as well as a sneaky teleport that can only be used once before it disappears so you can mislead the chaser and waste their time! Who will come out on top?',
+  //   thumbnail: '/games/tag.jpg',
+  //   url: 'https://poki.com/en/g/tag',
+  //   originalUrl: 'https://poki.com/en/g/tag',
+  //   category: ['music', 'creative'],
+  //   featured: true,
+  // },
   {
     id: 'bubbleShooter',
     title: 'Bubble Shooter HD 3',
