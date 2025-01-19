@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { games } from '@/data/games';
 import FullscreenButton from '@/app/components/FullscreenButton';
 import ShareButton from '@/app/components/ShareButton';
+import GameIframe from '@/app/components/GameIframe';
+
 
 // type Props = {
 //   params: {
@@ -87,15 +89,7 @@ export default async function GameDetail({
       </div>
       
       <div className="max-w-4xl mx-auto w-full aspect-[16/9] bg-white dark:bg-gray-800 rounded-t-xl overflow-hidden shadow-lg">
-        <iframe 
-          src={game.url}
-          className="w-full h-full border-0"
-          allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          referrerPolicy="no-referrer"
-          sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation"
-          loading="lazy"
-        />
+        <GameIframe url={game.url} originalUrl={game.originalUrl} />
       </div>
       
       <div className="max-w-4xl mx-auto bg-gradient-to-b from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-b-xl py-2 px-4">
