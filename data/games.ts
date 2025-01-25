@@ -10,16 +10,15 @@ export interface Game {
 }
 
 export const games: Game[] = [
-  // {
-  //   id: 'tag',
-  //   title: 'Tag',
-  //   description: 'TAG is local multiplayer game of catch! Square up against one, two or three of your friends and chase each other around one of three different levels! There are shortcuts you can take to bounce yourself up and away from the chaser as well as a sneaky teleport that can only be used once before it disappears so you can mislead the chaser and waste their time! Who will come out on top?',
-  //   thumbnail: '/games/tag.jpg',
-  //   url: 'https://poki.com/en/g/tag',
-  //   originalUrl: 'https://poki.com/en/g/tag',
-  //   category: ['music', 'creative'],
-  //   featured: true,
-  // },
+  {
+    id: 'SpaceWar3D',
+    title: 'Space War 3D',
+    description: 'If you are a fan of space shooting games and experiencing sky shooting styles, then Space War is right up your alley. One day, our beautiful galaxy is attacked by space invaders. You are the last hero of the galaxy. Your goal will require quite a struggle because you have to save the galaxy from the enemies. Space War puts you in a front-line battle with space invaders. You will take control of the spaceship and protect the galaxy from alien swarms. As the game progresses, the spaceship qualifies for the upgrade and you will get the full lethal feature.',
+    thumbnail: '/games/SpaceWar3D.jpg',
+    url: 'https://html5.gamemonetize.co/2nvgjwud82nthgbyy15nqlzbtlv07g6h/',
+    category: ['music', 'creative'],
+    featured: true,
+  },
   {
     id: 'bubbleShooter',
     title: 'Bubble Shooter HD 3',
