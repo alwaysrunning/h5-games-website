@@ -13,8 +13,7 @@ export default async function sitemap() {
 
   // Static page URLs
   const staticPages = [
-    '',
-    '/games',
+    '/',
     '/about',
     '/contact',
     '/privacy',
