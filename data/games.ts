@@ -5,27 +5,31 @@ export interface Game {
   thumbnail: string;
   url: string;
   category: string[];
+  tags?: string[];
   featured?: boolean;
   originalUrl?: string;
+  supportMobile?: boolean;
 }
 
 export const games: Game[] = [
-  {
-    id: 'Skibidi',
-    title: 'Skibidi Toilet Jigsaw Puzzle',
-    description: 'Laugh your way through the hilariously wacky world of Skibidi Toilet Jigsaw! Solve puzzles featuring iconic scenes and characters from the viral meme. Perfect for fans of funny puzzles and quirky humor, this game offers adjustable difficulty levels for all ages. Enjoy hours of entertainment and meme-worthy fun with this unique puzzle game!',
-    thumbnail: '/games/Skibidi.jpg',
-    url: 'https://html5.gamemonetize.co/0tve9iq1vlu2vkur6omxin74pkgsdv65/',
-    category: ['music', 'creative'],
-    featured: true,
-  },
   {
     id: 'SpaceWar3D',
     title: 'Space War 3D',
     description: 'If you are a fan of space shooting games and experiencing sky shooting styles, then Space War is right up your alley. One day, our beautiful galaxy is attacked by space invaders. You are the last hero of the galaxy. Your goal will require quite a struggle because you have to save the galaxy from the enemies. Space War puts you in a front-line battle with space invaders. You will take control of the spaceship and protect the galaxy from alien swarms. As the game progresses, the spaceship qualifies for the upgrade and you will get the full lethal feature.',
     thumbnail: '/games/SpaceWar3D.jpg',
     url: 'https://html5.gamemonetize.co/2nvgjwud82nthgbyy15nqlzbtlv07g6h/',
-    category: ['music', 'creative'],
+    category: ['adventure'],
+    supportMobile: true,
+    featured: true,
+  },
+  {
+    id: 'Skibidi',
+    title: 'Skibidi Toilet Jigsaw Puzzle',
+    description: 'Laugh your way through the hilariously wacky world of Skibidi Toilet Jigsaw! Solve puzzles featuring iconic scenes and characters from the viral meme. Perfect for fans of funny puzzles and quirky humor, this game offers adjustable difficulty levels for all ages. Enjoy hours of entertainment and meme-worthy fun with this unique puzzle game!',
+    thumbnail: '/games/Skibidi.jpg',
+    url: 'https://html5.gamemonetize.co/0tve9iq1vlu2vkur6omxin74pkgsdv65/',
+    category: ['casual'],
+    supportMobile: true,
     featured: true,
   },
   {
@@ -34,7 +38,8 @@ export const games: Game[] = [
     description: 'Bubble Shooter HD 3 is the long-awaited third sequel to the the legendary Bubble Shooter game. Bubble Shooter HD 3 features the classic Bubble Shooter HD gameplay with a set of fresh new bubbles, the option to choose between the arrow vs pointer when shooting bubbles as well as the mighty BOMB feature that lets you blow up 15 bubbles at once. So what is the highest score you can achieve? Enjoy Bubble Shooter HD 3 now and break a new record!',
     thumbnail: '/games/bubbleShooter.jpg',
     url: 'https://html5.gamedistribution.com/03e358cc3331480795d74a55e4283686/?gd_sdk_referrer_url=https://www.spatial.io/g/bubble-shooter-hd-3',
-    category: ['music', 'creative'],
+    category: ['casual'],
+    supportMobile: true,
     featured: true,
   },
   {
@@ -43,7 +48,8 @@ export const games: Game[] = [
     description: `Welcome To Play Block Legend Puzzle. "Block Legend Puzzle " is a fun and classic block game! And our Block Puzzle is not just that. It is more Simple and addictive! Once you start, you will not stop playing. Just have a try, you will love it! make full lines vertically or horizontally to clear the blocks and to get a high score. drag and drop blocks in the grid.`,
     thumbnail: '/games/BlockLegendPuzzle.jpg',
     url: 'https://html5.gamemonetize.co/m4jm6dce30g8owodh7ezzv8bc1q63neq/',
-    category: ['music', 'creative'],
+    supportMobile: true,
+    category: ['casual'],
     featured: true,
   },
   {
@@ -52,7 +58,8 @@ export const games: Game[] = [
     description: 'Connect identical tiles to each other to clear the board. Click 2 identical tiles to connect them. Each connection can have no more than 2 turns.',
     thumbnail: '/games/dreamPetLink.jpg',
     url: 'https://html5.gamedistribution.com/f9de399f8d324adc828279e73f43951c/?gd_sdk_referrer_url=https%3A%2F%2Fwww.1001games.com%2Fthink%2Fdream-pet-link',
-    category: ['music', 'creative'],
+    category: ['casual'],
+    supportMobile: true,
     featured: true,
   },
   {
@@ -61,25 +68,28 @@ export const games: Game[] = [
     description: 'Do you want to develop intelligence by playing chess? This game has two modes, play against the computer and challenge a friend playing locally. Enjoy this stylish version of the classic chess game.',
     thumbnail: '/games/masterChess.jpg',
     url: 'https://storage.y8.com/y8-studio/html5/akeemywka/master_chess_v3',
-    category: ['music', 'creative'],
+    supportMobile: true,
+    category: ['casual'],
     featured: true,
   },
-  {
-    id: 'incredibox',
-    title: 'Incredibox',
-    description: `Sprunki is an interactive music creation game that provides players with a fun and creative way to mix beats, sounds, and characters to build unique tracks. It places players in a vibrant animated world where the goal is not only to challenge themselves through various music levels but also to express their creativity. The game is unique in its approach to music gaming, merging the excitement of exploration with the joy of music creation, presenting a world filled with challenges and mysteries to be unraveled. As players maneuver through the game's environments, they will encounter different difficulties that test their abilities.`,
-    thumbnail: '/games/thumb.jpg',
-    url: 'https://sprunki.org/sprunki-incredibox.embed',
-    category: ['music', 'creative'],
-    featured: true,
-  },
+  // {
+  //   id: 'incredibox',
+  //   title: 'Incredibox',
+  //   description: `Sprunki is an interactive music creation game that provides players with a fun and creative way to mix beats, sounds, and characters to build unique tracks. It places players in a vibrant animated world where the goal is not only to challenge themselves through various music levels but also to express their creativity. The game is unique in its approach to music gaming, merging the excitement of exploration with the joy of music creation, presenting a world filled with challenges and mysteries to be unraveled. As players maneuver through the game's environments, they will encounter different difficulties that test their abilities.`,
+  //   thumbnail: '/games/thumb.jpg',
+  //   url: 'https://sprunki.org/sprunki-incredibox.embed',
+  //   supportMobile: true,
+  //   category: ['creative'],
+  //   featured: true,
+  // },
   {
     id: 'worldWar2',
     title: 'World War 2',
     description: 'Immerse yourself in the atmosphere of World War II, where every battle is a unique fight for survival! The game is designed for military enthusiasts and those who love intense online battles. It’s the perfect choice for players who prefer shooters with detailed gameplay, a variety of characters, and customization. Suitable for both seasoned fighters and newcomers. Enjoy playing this third person shooter in this war simulation game here at Y8.com!',
     thumbnail: '/games/ww2.jpg',
     url: 'https://play.wgplayground.com/ifr/2e8935eb95926955842ef1a1e866e4e4',
-    category: ['music', 'creative'],
+    category: ['adventure'],
+    supportMobile: false,
     featured: true,
   },
   {
@@ -88,7 +98,8 @@ export const games: Game[] = [
     description: `It's time to show off your skills on motorcycles with the City Bike Stunt game! If you complete 6 different races in time, you can unlock powerful motorcycles. Aim for the ramps and avoid the barriers while you attempt to reach the finish line in each thrilling level. Do not forget to use NITRO power to pass long ramps! Continue with the "2 PLAYER" option to play with your friend. Prove to your friend who is a better motorcycle master!`,
     thumbnail: '/games/CityBikeStunt.jpg',
     url: 'https://html5.gamemonetize.co/4fsie8xlboycrf46lxevrj522e1pwmp0/',
-    category: ['music', 'creative'],
+    supportMobile: true,
+    category: ['adventure'],
     featured: true,
   },
   {
@@ -97,7 +108,8 @@ export const games: Game[] = [
     description: `Do you remember dollz? Sometimes called cartoon dolls, the games where you could create them were known as dollmakers. They were all the rage in the early 2000s, but if you ever spent hours dressing them up, it feels like just yesterday! We got Poika to design a fresh take on dollz for this dollmaker. She's definitely leveled up: bigger, more detailed, and way easier to see. The originals were tiny, probably because computer screens were so much smaller back then! The game is packed with Y2K vibes – think low-rise cargo pants, chunky shoes, crop tops, and those skinny scarves everyone seemed to own.`,
     thumbnail: '/games/dollz.jpg',
     url: 'https://static.dressupgames.com/leikir/no-hotlinking/dollz/game.html',
-    category: ['music', 'creative'],
+    supportMobile: true,
+    category: ['creative'],
     featured: true,
   },
   {
@@ -106,16 +118,18 @@ export const games: Game[] = [
     description: 'UUno Online is a strategy card game with two game modes. In the game, the first player to clear his hand will become the winner. In order to win, you need to guess the deck of cards in your opponents hands and arrange your card order reasonably',
     thumbnail: '/games/uno.jpg',
     url: 'https://kdata1.com/2017/03/four-colors/',
-    category: ['music', 'creative'],
+    supportMobile: false,
+    category: ['casual'],
     featured: true,
   },
   {
-    id: 'racingGo',
+    id: 'bikeRacing',
     title: 'Quad Bike Racing',
     description: 'Play Quad bike racing on amazing racing tracks. Do you like quad bike top speed race and motorcycle drift race on fast tracks? If Yes then you have to play with multi selection option Quad Bike Racing with violent and uncontrollable racing manner on impossible racing tracks.',
     thumbnail: '/games/QuadBikeRacing.jpg',
     url: 'https://html5.gamemonetize.co/j4ihu5ioob5nay2xiufynfcmmniyx7ih/',
-    category: ['music', 'creative'],
+    supportMobile: false,
+    category: ['adventure'],
     featured: true,
   },
   {
@@ -124,7 +138,8 @@ export const games: Game[] = [
     description: `It's a clash on the battlefield! Draw up your plan and defeat your opponents with finesse! It is also known as the draughts game, and it is an interesting test of strategy. Compete with an opponent and dominate their pieces as best you can. What happens when you manage to move a piece to the other end? Come play now and let's find out!`,
     thumbnail: '/games/checkersDeluxe.jpg',
     url: 'https://storage.y8.com/y8-studio/html5/akeemywka/master_checkers_v3/?key=y8&value=default',
-    category: ['music', 'creative'],
+    supportMobile: false,
+    category: ['casual'],
     featured: true,
   },
 
@@ -134,7 +149,8 @@ export const games: Game[] = [
     description: `FNF: Wacky World is a super mod for Friday Night Funkin' featuring a playable version of SleepyOreo's song "Wacky World" based on The Amazing Digital Circus. Check your reflexes in this awesome rap battle and win this round.`,
     thumbnail: '/games/fnfWackyWorld.jpg',
     url: 'https://fnf.kdata1.com/2024/wacky-world/12/',
-    category: ['music', 'creative'],
+    supportMobile: false,
+    category: ['casual'],
     featured: true,
   },
   {
@@ -143,7 +159,8 @@ export const games: Game[] = [
     description: `Do you like Solitaire Games? Try and play now the Spider Solitare Big. This Spider Solitaire game is played with large clear cards and comes with the handy hint button. You can choose to play with 1, 2 or 4 suits. Play easy with single suit for easy card matching in either heart or diamond. The 4 suit lets you play with more challenging cards.`,
     thumbnail: '/games/spiderSolitaire.jpg',
     url: 'https://games.gameboss.com/spidersolitairebig/index.html',
-    category: ['music', 'creative'],
+    supportMobile: false,
+    category: ['casual'],
     featured: true,
   },
   {
@@ -152,7 +169,8 @@ export const games: Game[] = [
     description: `This Christmas the evil elves plan to take over the Santa secret place, and summon the evil Baba Yaga, also known as Pagan Idol to this world. Don’t let this happen. Take your gun and impose punishment on all who confront you in a brand new overwhelming team shooter Winter Clash 3D. Take a role of a mighty Santa Clause and capture the Pagan Idol from a deserted lighthouse island, and burn it to ashes in your Christmas fire.`,
     thumbnail: '/games/winterClash3D.jpg',
     url: 'https://storage.y8.com/y8-studio/html5/akeemywka/winter_clash_3d/?key=2963721&value=173323',
-    category: ['music', 'creative'],
+    category: ['adventure'],
+    supportMobile: false,
     featured: true,
   },
   {
@@ -161,7 +179,8 @@ export const games: Game[] = [
     description: 'CS Dust is a 3D first-person shooter game with two game modes and many different weapons. You can choose a side (police or terrorists) and try to destroy the enemy team to win. Buy new weapons and unlock the legendary AWP to become the new champion.',
     thumbnail: '/games/cs.jpg',
     url: 'https://storage.y8.com/y8-studio/unity_webgl/perion1111/cs_dust',
-    category: ['music', 'creative'],
+    category: ['adventure'],
+    supportMobile: false,
     featured: true,
   },
   // 添加更多游戏...

@@ -8,15 +8,27 @@ import GameCard from './components/GameCard';
 function GamesList() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
+  const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [filteredGames, setFilteredGames] = useState(games);
 
   useEffect(() => {
-    const filtered = games.filter(game => 
-      game.title.toLowerCase().includes(query.toLowerCase()) ||
-      game.description.toLowerCase().includes(query.toLowerCase())
+    const checkMobile = () => {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(window.navigator.userAgent);
+    };
+    setIsMobileDevice(checkMobile());
+  }, []);
+
+  useEffect(() => {
+    const filtered = games.filter(game => {
+      if (isMobileDevice) {
+        return game.supportMobile || false;
+      }
+      return true;
+    }).filter(game => 
+      game.title.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredGames(filtered);
-  }, [query]);
+  }, [query, isMobileDevice]);
 
   return (
     <div className="container mx-auto px-4 py-8">

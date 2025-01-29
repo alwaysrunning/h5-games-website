@@ -21,9 +21,7 @@ export default function Header() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchQuery.trim()) {
-      router.push(`/?q=${encodeURIComponent(searchQuery.trim())}`);
-    }
+    router.push(`/?q=${encodeURIComponent(searchQuery.trim())}`);
   };
 
   return (
@@ -38,14 +36,15 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Image 
               src="/logo.jpg" 
-              alt="HTML5 Games" 
-              width={32} 
-              height={32}
+              alt="Play Games Online For Free, Games for boys, girls, kids and adults" 
+              width={42} 
+              height={42}
               className="w-8 h-8"
             />
-            <span className="text-xl font-bold text-gray-800 dark:text-white">
-              HTML5 Games
-            </span>
+            <h1 className="text-[16px] font-bold leading-[16px] font-[Arial,Helvetica,sans-serif] text-[#494B4F] dark:text-white inline-block">
+              Play Games Online For Free <br/>
+              <span className='text-[12px] font-normal'>Games for boys, girls, kids and adults</span>
+            </h1>
           </Link>
 
           {/* 搜索框 */}

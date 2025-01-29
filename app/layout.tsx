@@ -40,6 +40,14 @@ export default function RootLayout({
         <link rel="canonical" href="https://unblockh5games.com" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9126717077917103"
           crossOrigin="anonymous"></script>
+        
+        {/* Favicon 配置 */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="/favicon-48x48.png" sizes="48x48" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
+        
       </head>
       <body className={inter.className}>
         <Header />
