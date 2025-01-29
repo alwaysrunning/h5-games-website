@@ -41,7 +41,7 @@ export default function Header() {
               height={42}
               className="w-8 h-8"
             />
-            <h1 className="text-[16px] font-bold leading-[16px] font-[Arial,Helvetica,sans-serif] text-[#494B4F] dark:text-white inline-block">
+            <h1 className="hidden md:block text-[16px] font-bold leading-[16px] font-[Arial,Helvetica,sans-serif] text-[#494B4F] dark:text-white">
               Play Games Online For Free <br/>
               <span className='text-[12px] font-normal'>Games for boys, girls, kids and adults</span>
             </h1>
