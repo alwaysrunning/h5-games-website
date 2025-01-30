@@ -1,29 +1,69 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
+import { useState } from 'react';
+
 export default function FullscreenButton() {
-  const handleFullscreen = () => {
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  const exitFullscreen = () => {
     const iframe = document.querySelector('iframe');
     if (iframe) {
-      try {
-        // 尝试使用标准的 Fullscreen API
-        if (iframe.requestFullscreen) {
-          iframe.requestFullscreen();
-        // webkit 前缀版本 (Safari)
-        } else if ((iframe as any).webkitRequestFullscreen) {
-          (iframe as any).webkitRequestFullscreen();
-        // mozilla 前缀版本
-        } else if ((iframe as any).mozRequestFullScreen) {
-          (iframe as any).mozRequestFullScreen();
-        // ms 前缀版本
-        } else if ((iframe as any).msRequestFullscreen) {
-          (iframe as any).msRequestFullscreen();
-        } else {
-          console.log('当前浏览器不支持全屏功能');
-        }
-      } catch (error) {
-        console.error('进入全屏模式时发生错误:', error);
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as any).MSStream;
+      
+      if (isIOS) {
+        iframe.style.position = '';
+        iframe.style.top = '';
+        iframe.style.left = '';
+        iframe.style.width = '';
+        iframe.style.height = '';
+        iframe.style.zIndex = '';
+        document.body.style.overflow = '';
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
       }
+    }
+    setIsFullscreen(false);
+  };
+
+  const handleFullscreen = () => {
+    if (isFullscreen) {
+      exitFullscreen();
+    } else {
+      const iframe = document.querySelector('iframe');
+      if (iframe) {
+        try {
+          // 检查是否是 iOS 设备
+          const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as any).MSStream;
+          
+          if (isIOS) {
+            // iOS 设备使用特殊处理
+            iframe.style.position = 'fixed';
+            iframe.style.top = '0';
+            iframe.style.left = '0';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.zIndex = '9999';
+            document.body.style.overflow = 'hidden';
+          } else {
+            // 其他设备使用标准全屏 API
+            if (iframe.requestFullscreen) {
+              iframe.requestFullscreen();
+            } else if ((iframe as any).webkitRequestFullscreen) {
+              (iframe as any).webkitRequestFullscreen();
+            } else if ((iframe as any).mozRequestFullScreen) {
+              (iframe as any).mozRequestFullScreen();
+            } else if ((iframe as any).msRequestFullscreen) {
+              (iframe as any).msRequestFullscreen();
+            } else {
+              console.log('当前浏览器不支持全屏功能');
+            }
+          }
+        } catch (error) {
+          console.error('进入全屏模式时发生错误:', error);
+        }
+      }
+      setIsFullscreen(true);
     }
   };
 

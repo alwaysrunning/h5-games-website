@@ -51,7 +51,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Header />
-        <main className="min-h-screen pt-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800">
+        <main className="min-h-[calc(100vh-65px)] pt-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800">
           {children}
         </main>
         
