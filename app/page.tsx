@@ -8,6 +8,7 @@ import GameCard from './components/GameCard';
 function GamesList() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
+  const category = searchParams.get('category') || '';
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [filteredGames, setFilteredGames] = useState(games);
   const [currentPage, setCurrentPage] = useState(1);
@@ -22,15 +23,19 @@ function GamesList() {
 
   useEffect(() => {
     const filtered = games.filter(game => {
-      if (isMobileDevice) {
-        return game.supportMobile || false;
+      if (isMobileDevice && !game.supportMobile) {
+        return false;
+      }
+      if (!game.title.toLowerCase().includes(query.toLowerCase())) {
+        return false;
+      }
+      if (category && !game.category.includes(category)) {
+        return false;
       }
       return true;
-    }).filter(game => 
-      game.title.toLowerCase().includes(query.toLowerCase())
-    );
+    });
     setFilteredGames(filtered);
-  }, [query, isMobileDevice]);
+  }, [query, isMobileDevice, category]);
 
   const indexOfLastGame = currentPage * gamesPerPage;
   const indexOfFirstGame = indexOfLastGame - gamesPerPage;
@@ -41,8 +46,40 @@ function GamesList() {
     window.scrollTo(0, 0);
   };
 
+  const allCategories = Array.from(new Set(games.flatMap(game => game.category)));
+
   return (
     <div className="container mx-auto px-4 py-8">
+      <div className="mb-6 flex flex-wrap gap-2">
+        <button
+          onClick={() => {
+            const params = new URLSearchParams(window.location.search);
+            params.delete('category');
+            window.history.pushState({}, '', `?${params.toString()}`);
+          }}
+          className={`px-4 py-2 rounded ${
+            !category ? 'bg-blue-500 text-white' : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300'
+          }`}
+        >
+          All
+        </button>
+        {allCategories.map(cat => (
+          <button
+            key={cat}
+            onClick={() => {
+              const params = new URLSearchParams(window.location.search);
+              params.set('category', cat);
+              window.history.pushState({}, '', `?${params.toString()}`);
+            }}
+            className={`px-4 py-2 rounded ${
+              category === cat ? 'bg-blue-500 text-white' : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300'
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 cursor-pointer">
         {currentGames.map(game => (
           <GameCard 
