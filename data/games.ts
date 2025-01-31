@@ -13,6 +13,16 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'sprunki-phase-9',
+    title: 'sprunki phase 9 | sprunki fase 9',
+    description: 'Sprunki Phase 9 takes the unique blend of rhythm-based gameplay and platforming to a whole new level. This phase brings together the dynamic world of Sprunki with the iconic music creation game, Incredibox. Players will be able to create their own unique tracks while navigating through a series of challenging levels. The game features a wide range of music genres and styles, allowing players to express their creativity and challenge their rhythm skills. With a focus on fun and accessibility, Sprunki Phase 9 offers an engaging and addictive experience for both newcomers and seasoned players.',
+    thumbnail: '/games/thumb.jpg',
+    url: 'https://iframegame.com/embed/sprunki-phase-9/index.html',
+    supportMobile: true,
+    category: ['Creative'],
+    featured: true,
+  },
+  {
     id: 'SpaceWar3D',
     title: 'Space War 3D',
     description: 'If you are a fan of space shooting games and experiencing sky shooting styles, then Space War is right up your alley. One day, our beautiful galaxy is attacked by space invaders. You are the last hero of the galaxy. Your goal will require quite a struggle because you have to save the galaxy from the enemies. Space War puts you in a front-line battle with space invaders. You will take control of the spaceship and protect the galaxy from alien swarms. As the game progresses, the spaceship qualifies for the upgrade and you will get the full lethal feature.',
@@ -72,16 +82,6 @@ export const games: Game[] = [
     category: ['Casual'],
     featured: true,
   },
-  // {
-  //   id: 'incredibox',
-  //   title: 'Incredibox',
-  //   description: `Sprunki is an interactive music creation game that provides players with a fun and creative way to mix beats, sounds, and characters to build unique tracks. It places players in a vibrant animated world where the goal is not only to challenge themselves through various music levels but also to express their creativity. The game is unique in its approach to music gaming, merging the excitement of exploration with the joy of music creation, presenting a world filled with challenges and mysteries to be unraveled. As players maneuver through the game's environments, they will encounter different difficulties that test their abilities.`,
-  //   thumbnail: '/games/thumb.jpg',
-  //   url: 'https://sprunki.org/sprunki-incredibox.embed',
-  //   supportMobile: true,
-  //   category: ['creative'],
-  //   featured: true,
-  // },
   {
     id: 'worldWar2',
     title: 'World War 2',
