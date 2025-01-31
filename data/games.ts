@@ -66,7 +66,7 @@ export const games: Game[] = [
     id: 'dreamPetLink',
     title: 'Dream Pet Link',
     description: 'Connect identical tiles to each other to clear the board. Click 2 identical tiles to connect them. Each connection can have no more than 2 turns.',
-    thumbnail: '/games/dreamPetLink.jpg',
+    thumbnail: '/games/dreamPetLink.webp',
     url: 'https://html5.gamedistribution.com/f9de399f8d324adc828279e73f43951c/?gd_sdk_referrer_url=https%3A%2F%2Fwww.1001games.com%2Fthink%2Fdream-pet-link',
     category: ['Casual'],
     supportMobile: true,
