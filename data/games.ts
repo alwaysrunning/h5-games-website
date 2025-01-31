@@ -16,7 +16,7 @@ export const games: Game[] = [
     id: 'sprunki-phase-9',
     title: 'sprunki phase 9 | sprunki fase 9',
     description: 'Sprunki Phase 9 takes the unique blend of rhythm-based gameplay and platforming to a whole new level. This phase brings together the dynamic world of Sprunki with the iconic music creation game, Incredibox. Players will be able to create their own unique tracks while navigating through a series of challenging levels. The game features a wide range of music genres and styles, allowing players to express their creativity and challenge their rhythm skills. With a focus on fun and accessibility, Sprunki Phase 9 offers an engaging and addictive experience for both newcomers and seasoned players.',
-    thumbnail: '/games/thumb.jpg',
+    thumbnail: '/games/sprunki9.jpg',
     url: 'https://iframegame.com/embed/sprunki-phase-9/index.html',
     supportMobile: true,
     category: ['Creative'],
