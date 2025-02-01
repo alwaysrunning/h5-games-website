@@ -34,14 +34,14 @@ export async function generateMetadata(
   return {
     metadataBase: new URL('https://unblockh5games.com'),
     title: title,
-    description: description,
+    description: description.length > 120 ? description.slice(0, 120) + '...' : description,
     keywords,
     alternates: {
       canonical: url,
     },
     openGraph: {
       title: title,
-      description: description,
+      description: description.length > 120 ? description.slice(0, 120) + '...' : description,
       url: url,
       siteName: 'Unblock H5 Games',
       images: [
@@ -57,7 +57,7 @@ export async function generateMetadata(
     twitter: {
       card: 'summary_large_image',
       title: title,
-      description: description,
+      description: description.length > 120 ? description.slice(0, 120) + '...' : description,
       images: [imageUrl],
       creator: '@UnblockH5Games',
       site: '@UnblockH5Games',
@@ -81,7 +81,7 @@ export default async function GameDetail({
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-4">
-          <h1 className="text-3xl font-bold text-center sm:text-left">{game.title}</h1>
+          <h2 className="text-3xl font-bold text-center sm:text-left">{game.title}</h2>
           <div className="flex justify-center sm:justify-end">
             <ShareButton 
               url={`https://unblockh5games.com/games/${id}`}

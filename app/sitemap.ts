@@ -13,7 +13,7 @@ export default async function sitemap() {
 
   // Static page URLs
   const staticPages = [
-    '/',
+    '',
     '/about',
     '/contact',
     '/privacy',
