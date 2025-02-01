@@ -23,7 +23,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'SpaceWar3D',
+    id: 'space-war-3d',
     title: 'Space War 3D',
     description: 'If you are a fan of space shooting games and experiencing sky shooting styles, then Space War is right up your alley. One day, our beautiful galaxy is attacked by space invaders. You are the last hero of the galaxy. Your goal will require quite a struggle because you have to save the galaxy from the enemies. Space War puts you in a front-line battle with space invaders. You will take control of the spaceship and protect the galaxy from alien swarms. As the game progresses, the spaceship qualifies for the upgrade and you will get the full lethal feature.',
     thumbnail: '/games/SpaceWar3D.jpg',
@@ -33,7 +33,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'Skibidi',
+    id: 'skibidi-toilet-jigsaw-puzzle',
     title: 'Skibidi Toilet Jigsaw Puzzle',
     description: 'Laugh your way through the hilariously wacky world of Skibidi Toilet Jigsaw! Solve puzzles featuring iconic scenes and characters from the viral meme. Perfect for fans of funny puzzles and quirky humor, this game offers adjustable difficulty levels for all ages. Enjoy hours of entertainment and meme-worthy fun with this unique puzzle game!',
     thumbnail: '/games/Skibidi.jpg',
@@ -43,7 +43,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'bubbleShooter',
+    id: 'bubble-shooter',
     title: 'Bubble Shooter HD 3',
     description: 'Bubble Shooter HD 3 is the long-awaited third sequel to the the legendary Bubble Shooter game. Bubble Shooter HD 3 features the classic Bubble Shooter HD gameplay with a set of fresh new bubbles, the option to choose between the arrow vs pointer when shooting bubbles as well as the mighty BOMB feature that lets you blow up 15 bubbles at once. So what is the highest score you can achieve? Enjoy Bubble Shooter HD 3 now and break a new record!',
     thumbnail: '/games/bubbleShooter.jpg',
@@ -53,7 +53,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'BlockLegendPuzzle',
+    id: 'block-legend-puzzle',
     title: 'Block Legend Puzzle',
     description: `Welcome To Play Block Legend Puzzle. "Block Legend Puzzle " is a fun and classic block game! And our Block Puzzle is not just that. It is more Simple and addictive! Once you start, you will not stop playing. Just have a try, you will love it! make full lines vertically or horizontally to clear the blocks and to get a high score. drag and drop blocks in the grid.`,
     thumbnail: '/games/BlockLegendPuzzle.jpg',
@@ -63,7 +63,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'dreamPetLink',
+    id: 'dream-pet-link',
     title: 'Dream Pet Link',
     description: 'Connect identical tiles to each other to clear the board. Click 2 identical tiles to connect them. Each connection can have no more than 2 turns.',
     thumbnail: '/games/dreamPetLink.webp',
@@ -73,7 +73,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'masterChess',
+    id: 'master-chess',
     title: 'Master Chess',
     description: 'Do you want to develop intelligence by playing chess? This game has two modes, play against the computer and challenge a friend playing locally. Enjoy this stylish version of the classic chess game.',
     thumbnail: '/games/masterChess.jpg',
@@ -83,7 +83,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'worldWar2',
+    id: 'world-war-2',
     title: 'World War 2',
     description: 'Immerse yourself in the atmosphere of World War II, where every battle is a unique fight for survival! The game is designed for military enthusiasts and those who love intense online battles. Its the perfect choice for players who prefer shooters with detailed gameplay, a variety of characters, and customization. Suitable for both seasoned fighters and newcomers.',
     thumbnail: '/games/ww2.webp',
@@ -93,7 +93,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'CityBikeStunt',
+    id: 'city-bike-stunt',
     title: 'City Bike Stunt',
     description: `It's time to show off your skills on motorcycles with the City Bike Stunt game! If you complete 6 different races in time, you can unlock powerful motorcycles. Aim for the ramps and avoid the barriers while you attempt to reach the finish line in each thrilling level. Do not forget to use NITRO power to pass long ramps! Continue with the "2 PLAYER" option to play with your friend. Prove to your friend who is a better motorcycle master!`,
     thumbnail: '/games/CityBikeStunt.jpg',
@@ -113,7 +113,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'unoOnline',
+    id: 'uno-online',
     title: 'Uno Online',
     description: 'UUno Online is a strategy card game with two game modes. In the game, the first player to clear his hand will become the winner. In order to win, you need to guess the deck of cards in your opponents hands and arrange your card order reasonably',
     thumbnail: '/games/uno.jpg',
@@ -123,7 +123,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'bikeRacing',
+    id: 'quad-bike-racing',
     title: 'Quad Bike Racing',
     description: 'Play Quad bike racing on amazing racing tracks. Do you like quad bike top speed race and motorcycle drift race on fast tracks? If Yes then you have to play with multi selection option Quad Bike Racing with violent and uncontrollable racing manner on impossible racing tracks.',
     thumbnail: '/games/QuadBikeRacing.jpg',
@@ -133,7 +133,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'checkersDeluxe',
+    id: 'checkers-deluxe',
     title: 'Checkers Deluxe Edition',
     description: `It's a clash on the battlefield! Draw up your plan and defeat your opponents with finesse! It is also known as the draughts game, and it is an interesting test of strategy. Compete with an opponent and dominate their pieces as best you can. What happens when you manage to move a piece to the other end? Come play now and let's find out!`,
     thumbnail: '/games/checkersDeluxe.jpg',
@@ -144,7 +144,7 @@ export const games: Game[] = [
   },
 
   {
-    id: 'fnfWackyWorld',
+    id: 'fnf-wacky-world',
     title: 'FNF: Wacky World',
     description: `FNF: Wacky World is a super mod for Friday Night Funkin' featuring a playable version of SleepyOreo's song "Wacky World" based on The Amazing Digital Circus. Check your reflexes in this awesome rap battle and win this round.`,
     thumbnail: '/games/fnfWackyWorld.jpg',
@@ -154,7 +154,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'spiderSolitaire',
+    id: 'spider-solitaire',
     title: 'Spider Solitaire',
     description: `Do you like Solitaire Games? Try and play now the Spider Solitare Big. This Spider Solitaire game is played with large clear cards and comes with the handy hint button. You can choose to play with 1, 2 or 4 suits. Play easy with single suit for easy card matching in either heart or diamond. The 4 suit lets you play with more challenging cards.`,
     thumbnail: '/games/spiderSolitaire.jpg',
@@ -164,7 +164,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'winterClash3D',
+    id: 'winter-clash-3d',
     title: 'Winter Clash 3D',
     description: `This Christmas the evil elves plan to take over the Santa secret place, and summon the evil Baba Yaga, also known as Pagan Idol to this world. Don’t let this happen. Take your gun and impose punishment on all who confront you in a brand new overwhelming team shooter Winter Clash 3D. Take a role of a mighty Santa Clause and capture the Pagan Idol from a deserted lighthouse island, and burn it to ashes in your Christmas fire.`,
     thumbnail: '/games/winterClash3D.webp',
@@ -174,7 +174,7 @@ export const games: Game[] = [
     featured: true,
   },
   {
-    id: 'csDust',
+    id: 'cs-dust',
     title: 'CS Dust',
     description: 'CS Dust is a 3D first-person shooter game with two game modes and many different weapons. You can choose a side (police or terrorists) and try to destroy the enemy team to win. Buy new weapons and unlock the legendary AWP to become the new champion.',
     thumbnail: '/games/cs.jpg',
