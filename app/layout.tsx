@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true
+  },
+  alternates: {
+    canonical: 'https://unblockh5games.com'  // 添加默认的权威URL
   }
 }
 
@@ -34,9 +37,26 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Unblock H5 Games",
+    "url": "https://unblockh5games.com",
+    "description": "Play the best free online HTML5 games. No downloads required.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://unblockh5games.com/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="canonical" href="https://unblockh5games.com" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9126717077917103"
           crossOrigin="anonymous"></script>
@@ -48,6 +68,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
         <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
         
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </head>
       <body className={inter.className}>
         <Header />

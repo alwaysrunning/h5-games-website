@@ -20,7 +20,7 @@ export default function GameCard({ game }: GameCardProps) {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover rounded"
-          priority={false}
+          priority={true}
         />
       </div>
       <h3 className="font-semibold text-gray-800 dark:text-white">
