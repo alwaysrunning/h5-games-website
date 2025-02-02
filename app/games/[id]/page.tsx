@@ -4,6 +4,8 @@ import { games } from '@/data/games';
 import FullscreenButton from '@/app/components/FullscreenButton';
 import ShareButton from '@/app/components/ShareButton';
 import GameIframe from '@/app/components/GameIframe';
+import Link from 'next/link';
+import GameCard from '@/app/components/GameCard';
 
 
 // type Props = {
@@ -77,6 +79,14 @@ export default async function GameDetail({
     notFound();
   }
 
+  // 获取相关游戏
+  const relatedGames = games
+    .filter(g => 
+      g.id !== game.id && 
+      g.category.some(cat => game.category.includes(cat))
+    )
+    .slice(0, 6);
+
   const gameSchema = {
     "@context": "https://schema.org",
     "@type": "VideoGame",
@@ -108,6 +118,25 @@ export default async function GameDetail({
       />
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
+          <nav className="mb-6">
+            <ol className="flex text-sm text-gray-600 dark:text-gray-400">
+              <li>
+                <Link href="/" className="hover:text-blue-500">Home</Link>
+              </li>
+              <li className="mx-2">/</li>
+              <li>
+                <Link 
+                  href={`/?category=${encodeURIComponent(game.category[0])}`}
+                  className="hover:text-blue-500"
+                >
+                  {game.category[0]}
+                </Link>
+              </li>
+              <li className="mx-2">/</li>
+              <li className="text-gray-900 dark:text-gray-200">{game.title}</li>
+            </ol>
+          </nav>
+          
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-4">
             <h2 className="text-3xl font-bold text-center sm:text-left">{game.title}</h2>
             <div className="flex justify-center sm:justify-end">
@@ -132,6 +161,16 @@ export default async function GameDetail({
         <div className="max-w-4xl mx-auto mt-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
           <h2 className="text-xl font-semibold mb-2">Game Details</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-4">{game.description}</p>
+        </div>
+
+        {/* 相关游戏推荐区域 - 在移动端隐藏 */}
+        <div className="max-w-4xl mx-auto mt-8 hidden sm:block">
+          <h2 className="text-2xl font-bold mb-4">Related Games</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {relatedGames.map(relatedGame => (
+              <GameCard key={relatedGame.id} game={relatedGame} />
+            ))}
+          </div>
         </div>
       </div>
     </>
