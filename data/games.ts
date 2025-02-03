@@ -13,6 +13,16 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'super-mario-run',
+    title: 'Super Mario Run',
+    description: 'Run with Mario and friends and help to rescue the princess, tap the screen to jump and make some tricks movements, Rush all the worlds and stomp the enemies to kill them, collect coins and buy Mario friend mask in the shop, be carefull with the spikes and saws, Run Fasters As possible and Help Mario to reach the best scores, Enjoy in Kiz10',
+    thumbnail: '/games/SuperMarioRun.webp',
+    url: 'https://html5.gamemonetize.co/pooszvaulpq40v81v8z3cfdpzau4hro6/',
+    supportMobile: true,
+    category: ['Sports'],
+    featured: true,
+  },
+  {
     id: 'basketball-life-3d',
     title: 'Basketball Life 3D',
     description: 'Ready for the wonderful basketball challenge? Basketball Life 3D is a fun and creative sports game that tests your skills and timing! From classic hoop challenges to trick shots, every level is packed with excitement.',
