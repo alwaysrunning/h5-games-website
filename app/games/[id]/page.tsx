@@ -164,14 +164,16 @@ export default async function GameDetail({
         </div>
 
         {/* 相关游戏推荐区域 - 在移动端隐藏 */}
-        <div className="max-w-4xl mx-auto mt-8 hidden sm:block">
-          <h2 className="text-2xl font-bold mb-4">Related Games</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {relatedGames.map(relatedGame => (
-              <GameCard key={relatedGame.id} game={relatedGame} />
-            ))}
+        {relatedGames.length > 0 && (
+          <div className="max-w-4xl mx-auto mt-8 hidden sm:block">
+            <h2 className="text-2xl font-bold mb-4">Related Games</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {relatedGames.map(relatedGame => (
+                <GameCard key={relatedGame.id} game={relatedGame} />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </>
   );
