@@ -27,7 +27,7 @@ export async function generateMetadata(
     }
   }
 
-  const title = `${game.title} - Unblock H5 Games`;
+  const title = game.metaTitle ?  game.metaTitle : `${game.title} - Unblock H5 Games`;
   const description = game.description;
   const keywords = `${game.title}, ${game.description}, online game, html5 game`;
   const url = `https://unblockh5games.com/games/${id}`;

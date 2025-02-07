@@ -1,6 +1,7 @@
 export interface Game {
   id: string;
   title: string;
+  metaTitle: string;
   description: string;
   thumbnail: string;
   url: string;
@@ -12,6 +13,17 @@ export interface Game {
 }
 
 export const games: Game[] = [
+  {
+    id: 'brick-breaker',
+    metaTitle: 'Brick Breaker | Brick Breaker Classic | Brick Breaker Mania | Smash Bricks Game | Brick Breaker Master',
+    title: 'Brick Breaker',
+    description: 'Smash bricks, defy gravity & unleash chaos in this fast-paced arcade thrill! Deflect balls with slick paddle moves, blast power-ups, and conquer hypnotic challenges. Classic retro vibes meet modern upgrades - how long can YOU survive? Play FREE now!',
+    thumbnail: '/games/brick-breaker.webp',
+    url: 'https://www.gameflare.com/embed/brick-breaker/',
+    supportMobile: true,
+    category: ['Casual'],
+    featured: true,
+  },
   {
     id: 'super-mario-run',
     title: 'Super Mario Run',
