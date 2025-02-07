@@ -1,7 +1,7 @@
 export interface Game {
   id: string;
   title: string;
-  metaTitle: string;
+  metaTitle?: string;
   description: string;
   thumbnail: string;
   url: string;
