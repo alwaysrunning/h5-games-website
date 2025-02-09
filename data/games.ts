@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'sprunki-match',
+    metaTitle: 'Sprunki Match | Sprunki | Match',
+    title: 'Sprunki Match',
+    description: 'Enjoy the vibrant world of Sprunki Match, a delightful tile-matching game for kids and families! Match colorful tiles to clear levels, unlock power-ups, and achieve high scores. Perfect for improving focus and strategy, this game offers hours of fun for players of all ages. Dive into this exciting adventure and help Sprunki conquer each puzzle-filled challenge!',
+    thumbnail: '/games/sprunki-match.jpg',
+    url: 'https://html5.gamemonetize.co/haw83ogwh8tmttia1afcromw1seh12ln/',
+    supportMobile: true,
+    category: ['Sprunki'],
+    featured: true,
+  },
+  {
     id: 'brick-breaker',
     metaTitle: 'Brick Breaker | Brick Breaker Classic | Brick Breaker Mania | Smash Bricks Game | Brick Breaker Master',
     title: 'Brick Breaker',
@@ -51,7 +62,7 @@ export const games: Game[] = [
     thumbnail: '/games/sprunki9.webp',
     url: 'https://iframegame.com/embed/sprunki-phase-9/index.html',
     supportMobile: true,
-    category: ['Creative'],
+    category: ['Sprunki'],
     featured: true,
   },
   {
