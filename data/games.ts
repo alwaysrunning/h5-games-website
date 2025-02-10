@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'dinosaur-game',
+    metaTitle: 'Chrome Dino Run | dinosaur game | dino game',
+    title: 'Chrome Dino Run',
+    description: 'A 8-bit game comes for the people who love old-school styled graphics, with a dinosaur at an infinite desert. Your goal is to avoid cacti. Each time you jump over a cactus, you get one point. Claim that you are the best at this game and show your skills to your friends by scoring the highest! Let the Chrome Dino run begin!',
+    thumbnail: '/games/dino-run.jpg',
+    url: 'https://html5.gamemonetize.games/gnmwziqsa5syjkym15fw581l40dsqq67/',
+    supportMobile: false,
+    category: ['Casual'],
+    featured: true,
+  },
+  {
     id: 'sprunki-match',
     metaTitle: 'Sprunki Match | Sprunki | Match',
     title: 'Sprunki Match',
