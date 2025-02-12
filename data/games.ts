@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'dentist-doctor',
+    metaTitle: 'Christmas Dentist Doctor | Dentist Doctor game | Dentist game',
+    title: 'Christmas Dentist Doctor',
+    description: 'Christmas Dentist Doctor is an educational dentist game for kids. Christmas is coming soon. Have you ever thought about what you should do if Santa has a dental disease? Now you can see a dentist for Santa and his moose. You can become a veterinarian and cure Santas assistant.',
+    thumbnail: '/games/dentist-doctor.jpg',
+    url: 'https://html5.gamemonetize.co/yqceek971a1yq0idgz0vnrvn7rszuvsy/',
+    supportMobile: true,
+    category: ['Casual'],
+    featured: true,
+  },
+  {
     id: 'dinosaur-game',
     metaTitle: 'Chrome Dino Run | dinosaur game | dino game',
     title: 'Chrome Dino Run',
