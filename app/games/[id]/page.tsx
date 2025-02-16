@@ -27,7 +27,7 @@ export async function generateMetadata(
     }
   }
 
-  const title = game.metaTitle ?  game.metaTitle : `${game.title} - Unblock H5 Games`;
+  const title = game.metaTitle ?  game.metaTitle : `${game.title} - Unblocked H5 Games`;
   const description = game.description;
   const keywords = `${game.title}, ${game.description}, online game, html5 game`;
   const url = `https://unblockh5games.com/games/${id}`;
@@ -45,7 +45,7 @@ export async function generateMetadata(
       title: title,
       description: description.length > 120 ? description.slice(0, 120) + '...' : description,
       url: url,
-      siteName: 'Unblock H5 Games',
+      siteName: 'Unblocked H5 Games',
       images: [
         {
           url: imageUrl,

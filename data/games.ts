@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'sprunki-valentine-coloring',
+    metaTitle: 'Sprunki Valentine Coloring | Sprunki Valentine | Sprunki Coloring',
+    title: 'Sprunki Valentine Coloring',
+    description: 'BTS Sprunki Valentine Coloring is a fun and free online coloring game designed for kids. With four unique images to color, you can unleash your creativity and create a masterpiece. Enjoy a relaxing and entertaining experience as you bring each picture to life with vibrant colors. Play now and have fun!',
+    thumbnail: '/games/sprunki-valentine-coloring.jpg',
+    url: 'https://html5.gamemonetize.co/fegagjg69hi8mpv846xele2hy5ytmomw/',
+    supportMobile: true,
+    category: ['Coloring'],
+    featured: true,
+  },
+  {
     id: 'dentist-doctor',
     metaTitle: 'Christmas Dentist Doctor | Dentist Doctor game | Dentist game',
     title: 'Christmas Dentist Doctor',

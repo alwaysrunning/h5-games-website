@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 // 取消注释并修改全局元数据配置
 export const metadata: Metadata = {
   title: {
-    default: 'Unblock H5 Games - Free Online HTML5 Games',
+    default: 'Unblocked H5 Games - Free Online HTML5 Games',
     template: '%s'  // 简化模板，让子页面完全控制标题
   },
   description: 'Play the best free online HTML5 games. No downloads required. Enjoy a wide selection of browser games including action, puzzle, racing, and more.',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'Unblock H5 Games'
+    siteName: 'Unblocked H5 Games'
   },
   robots: {
     index: true,
@@ -40,7 +40,7 @@ export default function RootLayout({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Unblock H5 Games",
+    "name": "Unblocked H5 Games",
     "url": "https://unblockh5games.com",
     "description": "Play the best free online HTML5 games. No downloads required.",
     "potentialAction": {
