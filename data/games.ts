@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'find-the-sprunk',
+    metaTitle: 'Find the Sprunk | Sprunki | the Sprunk',
+    title: 'Find the Sprunk',
+    description: 'Find out the hidden Sprunki in the specified images. Each level has 12 hidden Sprunki. There are 12 levels in total. The time is limited so be fast and find all hidden objects before time runs out. Clicking in the wrong place several times reduces the time by an additional 5 seconds. So, if you are ready, start the game and have fun!',
+    thumbnail: '/games/find-the-sprunk.jpg',
+    url: 'https://html5.gamemonetize.co/wsuxctn4s7vf3mzh0qh9s2b3yb4nzgiv/',
+    supportMobile: true,
+    category: ['Sprunki'],
+    featured: true,
+  },
+  {
     id: 'sprunki-valentine-coloring',
     metaTitle: 'Sprunki Valentine Coloring | Sprunki Valentine | Sprunki Coloring',
     title: 'Sprunki Valentine Coloring',
@@ -21,7 +32,7 @@ export const games: Game[] = [
     thumbnail: '/games/sprunki-valentine-coloring.jpg',
     url: 'https://html5.gamemonetize.co/fegagjg69hi8mpv846xele2hy5ytmomw/',
     supportMobile: true,
-    category: ['Coloring'],
+    category: ['Sprunki'],
     featured: true,
   },
   {
