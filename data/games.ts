@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'corruptbox-sprunki',
+    metaTitle: 'CORRUPTOX but sprunki | Sprunki Beat | CorruptBox',
+    title: 'CorruptBox: Sprunki Beat',
+    description: 'Merge music and mayhem in this innovative rhythm game! Craft beats by battling quirky "Sprunki" creatures, each adding unique sounds to your track. Master real-time combos to build dynamic tracks while dodging obstacles. Customize your avatar, unlock wild instruments, and collaborate online for explosive jam sessions. Unleash creativity in a neon-drenched universe where every note reshapes the world!',
+    thumbnail: '/games/corruptbox-sprunki.jpg',
+    url: 'https://wowtbc.net/sprunkin/corruptbox-sprunki/index.html',
+    supportMobile: true,
+    category: ['Sprunki'],
+    featured: true,
+  },
+  {
     id: 'find-the-sprunk',
     metaTitle: 'Find the Sprunk | Sprunki | the Sprunk',
     title: 'Find the Sprunk',
