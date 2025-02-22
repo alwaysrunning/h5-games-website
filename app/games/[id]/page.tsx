@@ -138,7 +138,7 @@ export default async function GameDetail({
           </nav>
           
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-4">
-            <h2 className="text-3xl font-bold text-center sm:text-left">{game.title}</h2>
+            <h1 className="text-3xl font-bold text-center sm:text-left">{game.title}</h1>
             <div className="flex justify-center sm:justify-end">
               <ShareButton 
                 url={`https://unblockh5games.com/games/${id}`}
