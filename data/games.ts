@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'Katshup',
+    metaTitle: 'Sprunki Version Katshup remix | Sprunki Katshup | Katshup',
+    title: 'Incredibox - Sprunki Version Katshup remix',
+    description: 'Players drag-and-drop accessories onto characters to unlock diverse sound effects, crafting unique beats while triggering "Dark Mode"—where characters transform into sinister puppets, visuals shift to a spooky theme, and music twists into haunting rhythms. Customize appearances, mix original tracks, and share creations to compete for global leaderboard spots (Top 50). Merging creativity with competition, its chilling art style and endless remix possibilities turn every melody into a spine-tingling adventure of surprises and suspense.',
+    thumbnail: '/games/katchup.jpg',
+    url: 'https://wowtbc.net/sprunkin/katchup/index.html',
+    supportMobile: true,
+    category: ['Sprunki'],
+    featured: true,
+  },
+  {
     id: 'corruptbox-sprunki',
     metaTitle: 'CORRUPTOX but sprunki | Sprunki Beat | CorruptBox',
     title: 'CorruptBox: Sprunki Beat',
