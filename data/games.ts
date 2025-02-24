@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'sprunki-puzzle',
+    metaTitle: 'Sprunki Incredibox Slide Puzzle | Sprunki Puzzle | Sprunki',
+    title: 'Sprunki Incredibox Slide Puzzle',
+    description: 'Play this slide puzzle games of sprunki incredibox. Its include 3 images of the sprunki incredibox and 3 modes (3x3, 4x4, 5x5) to play.',
+    thumbnail: '/games/sprunki-puzzle.jpg',
+    url: 'https://html5.gamemonetize.co/fh6w9sknku51noi4b6lw5ibtw2a3mvl5/',
+    supportMobile: true,
+    category: ['Sprunki'],
+    featured: true,
+  },
+  {
     id: 'Katshup',
     metaTitle: 'Sprunki Version Katshup remix | Sprunki Katshup | Katshup',
     title: 'Incredibox - Sprunki Version Katshup remix',
