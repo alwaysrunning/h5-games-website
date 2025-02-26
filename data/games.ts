@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'sprunki-memory-game',
+    metaTitle: 'Sprunki Memory Game | Sprunki Memory | Sprunki',
+    title: 'Sprunki Memory Game',
+    description: 'Get ready for a fast-paced memory challenge with a Sprunki twist! In Sprunki Card Match, your mission is simple: flip the cards and find matching pairs—all featuring the adventurous Sprunki character in action. Test your memory skills across Easy and Medium modes as you race against the clock. Spot Sprunki jumping, running, and exploring in different poses and match them as quickly as you can. The faster you match, the higher your score! Perfect for players of all ages who love a quick brain boost with an adventurous vibe. Are you sharp enough to match them all? Flip the cards and prove it!',
+    thumbnail: '/games/sprunki-memory-game.jpg',
+    url: 'https://html5.gamemonetize.co/fh6w9sknku51noi4b6lw5ibtw2a3mvl5/',
+    supportMobile: true,
+    category: ['Sprunki'],
+    featured: true,
+  },
+  {
     id: 'sprunki-puzzle',
     metaTitle: 'Sprunki Incredibox Slide Puzzle | Sprunki Puzzle | Sprunki',
     title: 'Sprunki Incredibox Slide Puzzle',
