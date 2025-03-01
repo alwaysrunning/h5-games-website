@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'weapon-survivor',
+    metaTitle: 'Weapon Survivor | Weapon Survivor Game | Weapon',
+    title: 'Weapon Survivor Game',
+    description: 'Welcome to Weapon Survivor, a wonderful action game filled with gunfire. In this exciting arcade game, you’ll play as a brave survivor. You are trapped in a battlefield full of enemies. Your only way out is to shoot and merge various weapons to enhance your combat abilities. Use your weapons to create rabid bulletstorms to shoot enemies.',
+    thumbnail: '/games/weapon-survivor.jpg',
+    url: 'https://html5.gamemonetize.co/il6zfmm5mz5v9prx247i9lyzllds0kbt/',
+    supportMobile: true,
+    category: ['Adventure'],
+    featured: true,
+  },
+  {
     id: 'sprunki-memory-game',
     metaTitle: 'Sprunki Memory Game | Sprunki Memory | Sprunki',
     title: 'Sprunki Memory Game',
@@ -38,7 +49,7 @@ export const games: Game[] = [
   {
     id: 'Katshup',
     metaTitle: 'Sprunki Version Katshup remix | Sprunki Katshup | Katshup',
-    title: 'Incredibox - Sprunki Version Katshup remix',
+    title: 'Sprunki Katshup remix',
     description: 'Players drag-and-drop accessories onto characters to unlock diverse sound effects, crafting unique beats while triggering "Dark Mode"—where characters transform into sinister puppets, visuals shift to a spooky theme, and music twists into haunting rhythms. Customize appearances, mix original tracks, and share creations to compete for global leaderboard spots (Top 50). Merging creativity with competition, its chilling art style and endless remix possibilities turn every melody into a spine-tingling adventure of surprises and suspense.',
     thumbnail: '/games/katchup.jpg',
     url: 'https://wowtbc.net/sprunkin/katchup/index.html',
