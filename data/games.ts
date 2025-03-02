@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'sprunki-phase-15',
+    metaTitle: 'Sprunki Phase 15 | Sprunki | Phase 15',
+    title: 'sprunki phase 15',
+    description: 'Sprunki Phase 15 takes the unique blend of rhythm-based gameplay and platforming to a whole new level. This phase brings together the dynamic world of Sprunki with the iconic music creation game, Incredibox. Players will be able to create their own unique tracks while navigating through a series of challenging levels. The game features a wide range of music genres and styles, allowing players to express their creativity and challenge their rhythm skills. With a focus on fun and accessibility, Sprunki Phase 9 offers an engaging and addictive experience for both newcomers and seasoned players.',
+    thumbnail: '/games/sprunki-phase-15.jpg',
+    url: 'https://wowtbc.net/sprunkin/phase-15/index.html',
+    supportMobile: true,
+    category: ['Sprunki'],
+    featured: true,
+  },
+  {
     id: 'weapon-survivor',
     metaTitle: 'Weapon Survivor | Weapon Survivor Game | Weapon',
     title: 'Weapon Survivor Game',
