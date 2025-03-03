@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'sprunki-megalovania',
+    metaTitle: 'Sprunki Megalovania | Sprunki Megalovania Game | Sprunki',
+    title: 'Sprunki Megalovania',
+    description: "Sprunki Megalovania blends Incredibox's remixing fun with Undertale vibes. Create epic tracks, unlock combos, and customize quirky characters in a vibrant music world",
+    thumbnail: '/games/sprunki-megalovania.jpg',
+    url: 'https://www.gameflare.com/embed/sprunki-megalovania/',
+    supportMobile: true,
+    category: ['Sprunki'],
+    featured: true,
+  },
+  {
     id: 'sprunki-phase-15',
     metaTitle: 'Sprunki Phase 15 | Sprunki | Phase 15',
     title: 'sprunki phase 15',
