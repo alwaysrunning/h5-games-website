@@ -14,6 +14,17 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'cool-math-games',
+    metaTitle: 'Cool Math Games For Kids | Cool Math Games | Cool Math',
+    title: 'Cool Math Games For Kids',
+    description: "This is a free learning game designed to teach children numbers and maths. Our game has 4 modes where you can learn addition, subtraction, and counting. This will help children learn to recognize numbers and start their training with addition and subtraction puzzles.",
+    thumbnail: '/games/cool-math-games.jpg',
+    url: 'https://html5.gamemonetize.co/egta6kf9xsirev9y5h0l0r28m30hiuv6/',
+    supportMobile: true,
+    category: ['Kids'],
+    featured: true,
+  },
+  {
     id: 'sprunki-megalovania',
     metaTitle: 'Sprunki Megalovania | Sprunki Megalovania Game | Sprunki',
     title: 'Sprunki Megalovania',
