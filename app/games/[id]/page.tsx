@@ -6,6 +6,7 @@ import ShareButton from '@/app/components/ShareButton';
 import GameIframe from '@/app/components/GameIframe';
 import Link from 'next/link';
 import GameCard from '@/app/components/GameCard';
+import GameReview from '@/app/components/GameReview';
 
 
 // type Props = {
@@ -160,8 +161,11 @@ export default async function GameDetail({
         
         <div className="max-w-4xl mx-auto mt-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
           <h2 className="text-xl font-semibold mb-2">Game Details</h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">{game.description}</p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4" dangerouslySetInnerHTML={{ __html: game.description}}></p>
         </div>
+
+        {/* 添加游戏测评模块 */}
+        {game.review && <GameReview game={game} />}
 
         {/* 相关游戏推荐区域 - 在移动端隐藏 */}
         {relatedGames.length > 0 && (
@@ -177,4 +181,4 @@ export default async function GameDetail({
       </div>
     </>
   );
-} 
+}

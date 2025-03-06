@@ -10,6 +10,11 @@ export interface Game {
   featured?: boolean;
   originalUrl?: string;
   supportMobile?: boolean;
+  graphics?: number;
+  sound?: number;
+  difficulty?: number;
+  overall?: number;
+  review?: string;
 }
 
 export const games: Game[] = [
@@ -39,12 +44,17 @@ export const games: Game[] = [
     id: 'sprunki-phase-15',
     metaTitle: 'Sprunki Phase 15 | Sprunki | Phase 15',
     title: 'sprunki phase 15',
-    description: 'Sprunki Phase 15 takes the unique blend of rhythm-based gameplay and platforming to a whole new level. This phase brings together the dynamic world of Sprunki with the iconic music creation game, Incredibox. Players will be able to create their own unique tracks while navigating through a series of challenging levels. The game features a wide range of music genres and styles, allowing players to express their creativity and challenge their rhythm skills. With a focus on fun and accessibility, Sprunki Phase 9 offers an engaging and addictive experience for both newcomers and seasoned players.',
+    description: `Unleash your inner composer—and brace for terror—in Sprunki Phase 15, a rhythm game where music meets the macabre! Drag quirky characters onto a soundboard to craft electrifying beats, blending pulsating EDM, retro synth, and haunting vocal effects. But beware: every harmonious combo risks triggering "Cursed Mode," transforming cheerful melodies into dissonant nightmares. Witness your vibrant studio warp into a surreal hellscape, complete with twitching animations and grotesque character mutations. With its compact size (39.80MB), Phase 15 offers seamless mobile play, perfect for on-the-go creativity and thrills. Whether you’re a Incredibox veteran or a horror enthusiast, this mod redefines musical immersion. Dare to mix, scare, and conquer? The stage—and the shadows—await your beat.`,
     thumbnail: '/games/sprunki-phase-15.jpg',
     url: 'https://iframegame.com/embed/sprunki-phase-15/index.html',
     supportMobile: true,
     category: ['Sprunki'],
     featured: true,
+    graphics: 3,
+    sound: 4,
+    difficulty: 4,
+    overall: 4,
+    review: `Sprunki Phase 15 delivers a bold evolution of its fan-made Incredibox roots, blending rhythmic creativity with unsettling horror aesthetics. This mod introduces an expanded library of electronic and experimental soundscapes, allowing players to craft layered tracks by dragging characters—each representing beats, vocals, or eerie effects—onto a dynamic mixing board. The horror-centric redesign of Phase 15 amplifies tension through grotesque character animations, distorted visuals, and jarring tonal shifts triggered by specific combinations. While the core mechanics remain accessible, the addition of "Cursed Mode" challenges players to survive unpredictable jump scares and corrupted audio layers, testing both rhythm precision and nerve. Technically, the Android version (39.80MB) runs smoothly, though its minimalist UI occasionally obscures advanced editing tools. The community-driven features shine, with custom level sharing and competitive challenges fostering replayability. However, the uneven difficulty curve in later stages—prioritizing shock over coherence—may alienate purists seeking rhythmic consistency. Despite minor flaws, Phase 15 excels as a subversive experiment in interactive music, marrying creative freedom with psychological unease. Its fusion of retro synth tones and horror elements carves a niche for audacious players, though its abrasive design philosophy may polarize audiences.`
   },
   {
     id: 'weapon-survivor',
@@ -189,13 +199,23 @@ export const games: Game[] = [
   },
   {
     id: 'sprunki-phase-9',
-    title: 'sprunki phase 9 | sprunki fase 9',
-    description: 'Sprunki Phase 9 takes the unique blend of rhythm-based gameplay and platforming to a whole new level. This phase brings together the dynamic world of Sprunki with the iconic music creation game, Incredibox. Players will be able to create their own unique tracks while navigating through a series of challenging levels. The game features a wide range of music genres and styles, allowing players to express their creativity and challenge their rhythm skills. With a focus on fun and accessibility, Sprunki Phase 9 offers an engaging and addictive experience for both newcomers and seasoned players.',
+    metaTitle: 'sprunki phase 9 | sprunki fase 9',
+    title: 'sprunki phase 9',
+    description: `
+<p>Dive into Sprunki Phase 9—a rhythm game where music meets madness! Craft your own electrifying beats by dragging quirky characters onto a dynamic soundboard, each unleashing unique melodies, basslines, or eerie vocal effects. Perfect for creatives, this fan-made mod of Incredibox lets you compose tracks spanning genres from pulsating EDM to haunting retro synth.</p>
+<p>But beware: this phase isn’t just about harmony. The game’s twisted art style—think grotesque character designs and psychedelic visuals—transforms your studio into a surreal nightmare. Unlock spine-chilling animations and hidden soundscapes as you experiment with darker musical combinations.</p> 
+<p>Challenge yourself in multiple modes, including a heart-pounding "Horror Mode" where rhythm mastery meets survival instinct. Share your creations with a thriving community, or tackle fiendish levels designed by players worldwide. With its compact size (1.61MB) and addictive gameplay, Sprunki Phase 9 is a must-try for rhythm enthusiasts craving creativity with a dash of dread. Ready to mix, scare, and conquer? The stage—and the terror—awaits!</p>   
+    `,
     thumbnail: '/games/sprunki9.webp',
     url: 'https://iframegame.com/embed/sprunki-phase-9/index.html',
     supportMobile: true,
     category: ['Sprunki'],
     featured: true,
+    graphics: 4,
+    sound: 5,
+    difficulty: 5,
+    overall: 5,
+    review: `Sprunki Phase 9 is a standout entry in the rhythm game genre, blending creative freedom with a uniquely eerie aesthetic. Built as a fan-made mod of Incredibox, it offers a robust music-creation toolkit where players drag and drop characters—each representing distinct beats, melodies, or effects—onto a mixing board to compose dynamic tracks. The game’s expanded sound library (featuring electronic, retro, and experimental genres) and intuitive interface cater to both casual players and audiophiles. Visually, Phase 9 leans into surreal, horror-inspired art, with characters redesigned to evoke tension through distorted animations and jarring color contrasts. This thematic shift enhances immersion but may overwhelm newcomers. The inclusion of community-driven features, like sharing custom levels and competing in player-designed challenges, adds longevity. However, the difficulty curve in later stages feels uneven, occasionally prioritizing shock value (e.g., sudden jump scares) over rhythmic precision. Technically, the Android version (1.61MB) runs smoothly, though the minimalist UI occasionally obscures advanced editing tools. Despite minor flaws, Sprunki Phase 9 excels as a platform for musical experimentation, offering a fresh, albeit unsettling, take on interactive rhythm games.`
   },
   {
     id: 'space-war-3d',
