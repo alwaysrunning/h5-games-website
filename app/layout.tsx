@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Link from 'next/link'
 import { Analytics } from "@vercel/analytics/react"
 import { Metadata } from 'next'
+import { GA_TRACKING_ID } from '@/lib/gtag'
 
 // import { games } from '../data/games'
 
@@ -72,6 +73,21 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
+        {/* 添加 Google Analytics 脚本 */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}');
+            `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         <Header />
@@ -105,4 +121,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-} 
+}
