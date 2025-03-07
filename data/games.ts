@@ -22,12 +22,17 @@ export const games: Game[] = [
     id: 'cool-math-games',
     metaTitle: 'Cool Math Games For Kids | Cool Math Games | Cool Math',
     title: 'Cool Math Games For Kids',
-    description: "This is a free learning game designed to teach children numbers and maths. Our game has 4 modes where you can learn addition, subtraction, and counting. This will help children learn to recognize numbers and start their training with addition and subtraction puzzles.",
+    description: `Unlock the joy of numbers with Cool Math Games for Kids—where learning feels like play! Perfect for ages 3–12, this app turns math into an adventure with colorful puzzles, brain teasers, and fast-paced challenges. Drag bubbles to solve equations, race against the clock in multiplication drills, or team up with family to conquer logic games like Make15. Kids master basics like addition and division while exploring fractions and decimals through interactive mini-games. Vibrant HD graphics and quirky characters keep young minds engaged, whether they’re managing a virtual ice cream shop or merging fruits to create giant watermelons. Parents will love the ad-free experience and adaptive difficulty that grows with their child’s skills. Compact size (under 10MB) means instant fun on the go—no Wi-Fi needed! Download now to give your child a head start in math… and watch them beg for "just one more level!"`,
     thumbnail: '/games/cool-math-games.jpg',
     url: 'https://html5.gamemonetize.co/egta6kf9xsirev9y5h0l0r28m30hiuv6/',
     supportMobile: true,
     category: ['Kids'],
     featured: true,
+    graphics: 4,
+    sound: 3,
+    difficulty: 3,
+    overall: 4,
+    review: 'Cool Math Games for Kids offers a robust educational platform that seamlessly integrates math practice with engaging gameplay. Designed for children aged 3–12, the app combines vibrant, child-friendly visuals with structured math challenges across arithmetic operations (addition, subtraction, multiplication, division) and advanced topics like fractions and decimals. Its standout feature is the "adaptive learning" system, which adjusts difficulty based on performance, ensuring progressive skill development. Mini-games such as Fractone (summing pairs to one) and TimesX (timed multiplication drills) reinforce core concepts through repetition without monotony. The app’s ad-free, free-to-play model makes it accessible, though parents may desire more detailed progress tracking. While the interface is intuitive, some advanced tools, like mixed-operation challenges, are buried in menus, requiring adult guidance for younger users. Performance-wise, its lightweight design (8.7MB) ensures smooth operation on most Android devices. Though lacking narrative depth, it excels as a supplementary educational tool, balancing skill-building with playful interaction.'
   },
   {
     id: 'sprunki-megalovania',
