@@ -22,7 +22,7 @@ export const games: Game[] = [
     id: 'cool-math-games',
     metaTitle: 'Cool Math Games For Kids | Cool Math Games | Cool Math',
     title: 'Cool Math Games For Kids',
-    description: `Unlock the joy of numbers with Cool Math Games for Kids—where learning feels like play! Perfect for ages 3–12, this app turns math into an adventure with colorful puzzles, brain teasers, and fast-paced challenges. Drag bubbles to solve equations, race against the clock in multiplication drills, or team up with family to conquer logic games like Make15. Kids master basics like addition and division while exploring fractions and decimals through interactive mini-games. Vibrant HD graphics and quirky characters keep young minds engaged, whether they’re managing a virtual ice cream shop or merging fruits to create giant watermelons. Parents will love the ad-free experience and adaptive difficulty that grows with their child’s skills. Compact size (under 10MB) means instant fun on the go—no Wi-Fi needed! Download now to give your child a head start in math… and watch them beg for "just one more level!"`,
+    description: `Spark a love for numbers with Cool Math Games for Kids—where learning math feels like play! Designed for ages 3–12, this HTML5 game turns equations into adventures: solve puzzles by popping bubbles, race against time in multiplication challenges, or manage a virtual ice cream shop! Vibrant graphics and quirky characters keep young minds engaged while mastering arithmetic, fractions, and more. No ads, no downloads—just instant, on-the-go fun! Parents can track progress as kids unlock achievements and tackle adaptive difficulty levels. Perfect for classrooms or family bonding, it’s math made magical. Ready to level up their skills? Let the numbers dance!`,
     thumbnail: '/games/cool-math-games.jpg',
     url: 'https://html5.gamemonetize.co/egta6kf9xsirev9y5h0l0r28m30hiuv6/',
     supportMobile: true,
@@ -32,24 +32,29 @@ export const games: Game[] = [
     sound: 3,
     difficulty: 3,
     overall: 4,
-    review: 'Cool Math Games for Kids offers a robust educational platform that seamlessly integrates math practice with engaging gameplay. Designed for children aged 3–12, the app combines vibrant, child-friendly visuals with structured math challenges across arithmetic operations (addition, subtraction, multiplication, division) and advanced topics like fractions and decimals. Its standout feature is the "adaptive learning" system, which adjusts difficulty based on performance, ensuring progressive skill development. Mini-games such as Fractone (summing pairs to one) and TimesX (timed multiplication drills) reinforce core concepts through repetition without monotony. The app’s ad-free, free-to-play model makes it accessible, though parents may desire more detailed progress tracking. While the interface is intuitive, some advanced tools, like mixed-operation challenges, are buried in menus, requiring adult guidance for younger users. Performance-wise, its lightweight design (8.7MB) ensures smooth operation on most Android devices. Though lacking narrative depth, it excels as a supplementary educational tool, balancing skill-building with playful interaction.'
+    review: `Cool Math Games for Kids excels as an educational HTML5 web game, offering adaptive math challenges for ages 3–12. Its core mechanics focus on foundational arithmetic (addition, subtraction, multiplication, division) and advanced topics like fractions and exponents, delivered through mini-games such as timed drills and logic puzzles. The adaptive learning system tailors difficulty to user performance, ensuring progressive skill development. While the minimalist interface is intuitive, advanced features like mixed-operation modes require guided navigation for younger players. Lightweight and browser-compatible, it runs seamlessly across devices without downloads. Despite lacking narrative depth, its ad-free model and structured curriculum make it a reliable supplementary tool for math fluency.`
   },
   {
     id: 'sprunki-megalovania',
     metaTitle: 'Sprunki Megalovania | Sprunki Megalovania Game | Sprunki',
     title: 'Sprunki Megalovania',
-    description: "Sprunki Megalovania blends Incredibox's remixing fun with Undertale vibes. Create epic tracks, unlock combos, and customize quirky characters in a vibrant music world",
+    description: `Unleash your inner composer in Sprunki Megalovania—a HTML5 game where Undertale’s iconic theme becomes your playground! Drag and drop beats, synths, and haunting vocals onto a dynamic grid to craft explosive remixes. Trigger combos to layer chaotic crescendos or mellow harmonies, then dive into sandbox mode to experiment freely. Perfect for Undertale fans and music enthusiasts, this browser-based gem requires no downloads—just creativity and a love for retro-inspired chaos. Whether you’re chasing nostalgia or crafting avant-garde beats, Sprunki Megalovania turns every click into a symphony. Ready to redefine Megalovania? The stage—and the chaos—is yours!`,
     thumbnail: '/games/sprunki-megalovania.jpg',
     url: 'https://www.gameflare.com/embed/sprunki-megalovania/',
     supportMobile: true,
     category: ['Sprunki'],
     featured: true,
+    graphics: 4,
+    sound: 5,
+    difficulty: 3,
+    overall: 4,
+    review: `Sprunki Megalovania reimagines the Undertale Megalovania theme as an HTML5 music-creation sandbox, blending nostalgic inspiration with interactive experimentation. Players drag sound icons—representing beats, melodies, and vocal samples—onto a dynamic grid to layer tracks, with combo-activated effects adding complexity. The browser-based design ensures accessibility, though its minimalist UI lacks advanced editing tools, relegating deeper customization to trial-and-error exploration. While the sandbox mode fosters creativity, the absence of structured challenges or progression limits long-term engagement. Lightweight and responsive, it excels as a casual tool for fans to remix iconic motifs, but its reliance on player-driven content underscores untapped potential for guided musical storytelling or community sharing features.`
   },
   {
     id: 'sprunki-phase-15',
     metaTitle: 'Sprunki Phase 15 | Sprunki | Phase 15',
     title: 'sprunki phase 15',
-    description: `Unleash your inner composer—and brace for terror—in Sprunki Phase 15, a rhythm game where music meets the macabre! Drag quirky characters onto a soundboard to craft electrifying beats, blending pulsating EDM, retro synth, and haunting vocal effects. But beware: every harmonious combo risks triggering "Cursed Mode," transforming cheerful melodies into dissonant nightmares. Witness your vibrant studio warp into a surreal hellscape, complete with twitching animations and grotesque character mutations. With its compact size (39.80MB), Phase 15 offers seamless mobile play, perfect for on-the-go creativity and thrills. Whether you’re a Incredibox veteran or a horror enthusiast, this mod redefines musical immersion. Dare to mix, scare, and conquer? The stage—and the shadows—await your beat.`,
+    description: `Unleash chaos and creativity in Sprunki Phase 15—a HTML5 rhythm game where music meets horror! Drag eerie characters onto a soundboard to craft electrifying beats, blending retro synths and haunting vocals. But beware: harmony can trigger "Cursed Mode," warping melodies into nightmarish soundscapes as characters mutate into grotesque, parasite-infected forms. Challenge friends in community-designed levels, share spine-chilling tracks, or survive rhythm-based jump scares. With no downloads and seamless browser play, it’s perfect for on-the-go experimentation. Whether composing or conquering terror, Phase 15 delivers a uniquely unsettling musical odyssey. Ready to mix, scare, and conquer? The abyss—and your masterpiece—awaits!`,
     thumbnail: '/games/sprunki-phase-15.jpg',
     url: 'https://iframegame.com/embed/sprunki-phase-15/index.html',
     supportMobile: true,
@@ -59,18 +64,23 @@ export const games: Game[] = [
     sound: 4,
     difficulty: 4,
     overall: 4,
-    review: `Sprunki Phase 15 delivers a bold evolution of its fan-made Incredibox roots, blending rhythmic creativity with unsettling horror aesthetics. This mod introduces an expanded library of electronic and experimental soundscapes, allowing players to craft layered tracks by dragging characters—each representing beats, vocals, or eerie effects—onto a dynamic mixing board. The horror-centric redesign of Phase 15 amplifies tension through grotesque character animations, distorted visuals, and jarring tonal shifts triggered by specific combinations. While the core mechanics remain accessible, the addition of "Cursed Mode" challenges players to survive unpredictable jump scares and corrupted audio layers, testing both rhythm precision and nerve. Technically, the Android version (39.80MB) runs smoothly, though its minimalist UI occasionally obscures advanced editing tools. The community-driven features shine, with custom level sharing and competitive challenges fostering replayability. However, the uneven difficulty curve in later stages—prioritizing shock over coherence—may alienate purists seeking rhythmic consistency. Despite minor flaws, Phase 15 excels as a subversive experiment in interactive music, marrying creative freedom with psychological unease. Its fusion of retro synth tones and horror elements carves a niche for audacious players, though its abrasive design philosophy may polarize audiences.`
+    review: `Sprunki Phase 15 redefines interactive music creation with its HTML5-driven horror-tinged rhythm mechanics. Built as a fan mod of Incredibox, it leverages Web Audio API and CSS3 animations for seamless audio-visual synchronization, enabling players to drag characters onto a dynamic soundboard to compose layered tracks spanning retro synth, EDM, and distorted vocal effects. The game’s standout "Cursed Mode" introduces unpredictable jump scares and corrupted audio layers, amplifying tension through grotesque character mutations and dissonant tonal shifts. While its minimalist UI ensures accessibility, advanced features like mixed-genre editing require experimentation. Community-driven level sharing adds replayability, though uneven difficulty spikes may frustrate purists. Lightweight and browser-compatible, it excels as a subversive, platform-agnostic creative tool.`
   },
   {
     id: 'weapon-survivor',
     metaTitle: 'Weapon Survivor | Weapon Survivor Game | Weapon',
     title: 'Weapon Survivor Game',
-    description: 'Welcome to Weapon Survivor, a wonderful action game filled with gunfire. In this exciting arcade game, you’ll play as a brave survivor. You are trapped in a battlefield full of enemies. Your only way out is to shoot and merge various weapons to enhance your combat abilities. Use your weapons to create rabid bulletstorms to shoot enemies.',
+    description: `Survive the apocalypse in Weapon Survivor Game—an HTML5 shooter where every bullet counts! Dive into chaotic, ever-changing wastelands, wielding an arsenal from pistols to rocket launchers to fend off relentless foes. Team up with friends in online co-op, fortify shelters, and unlock deadly upgrades to outlast waves of enemies. With no downloads and instant browser play, it’s perfect for bite-sized chaos. Will you scavenge, strategize, and dominate… or become another casualty of the ruins? The wasteland awaits your trigger finger!`,
     thumbnail: '/games/weapon-survivor.jpg',
     url: 'https://html5.gamemonetize.co/il6zfmm5mz5v9prx247i9lyzllds0kbt/',
     supportMobile: true,
     category: ['Adventure'],
     featured: true,
+    graphics: 4,
+    sound: 4,
+    difficulty: 5,
+    overall: 5,
+    review: `Weapon Survivor Game is a compact yet intense HTML5 shooter that merges survival mechanics with fast-paced combat. Players navigate procedurally generated post-apocalyptic maps, scavenging resources and battling enemies using diverse firearms (rifles, shotguns, rocket launchers) with distinct tactical trade-offs. The adaptive difficulty curve and upgrade system reward strategic play, though minimalist UI design occasionally obscures advanced controls. Browser-based optimization ensures smooth performance, while cooperative multiplayer modes amplify replayability. However, repetitive enemy AI and limited narrative depth hinder long-term engagement. Ideal for quick sessions, it balances accessibility with challenge, positioning itself as a competent entry in the browser-based survival shooter genre.`,
   },
   {
     id: 'sprunki-memory-game',
@@ -206,11 +216,7 @@ export const games: Game[] = [
     id: 'sprunki-phase-9',
     metaTitle: 'sprunki phase 9 | sprunki fase 9',
     title: 'sprunki phase 9',
-    description: `
-<p>Dive into Sprunki Phase 9—a rhythm game where music meets madness! Craft your own electrifying beats by dragging quirky characters onto a dynamic soundboard, each unleashing unique melodies, basslines, or eerie vocal effects. Perfect for creatives, this fan-made mod of Incredibox lets you compose tracks spanning genres from pulsating EDM to haunting retro synth.</p>
-<p>But beware: this phase isn’t just about harmony. The game’s twisted art style—think grotesque character designs and psychedelic visuals—transforms your studio into a surreal nightmare. Unlock spine-chilling animations and hidden soundscapes as you experiment with darker musical combinations.</p> 
-<p>Challenge yourself in multiple modes, including a heart-pounding "Horror Mode" where rhythm mastery meets survival instinct. Share your creations with a thriving community, or tackle fiendish levels designed by players worldwide. With its compact size (1.61MB) and addictive gameplay, Sprunki Phase 9 is a must-try for rhythm enthusiasts craving creativity with a dash of dread. Ready to mix, scare, and conquer? The stage—and the terror—awaits!</p>   
-    `,
+    description: `Dive into Sprunki Phase 9—a HTML5 rhythm game where creativity collides with chaos! Craft electrifying tracks by dragging quirky characters onto a soundboard, each unleashing unique beats, synths, or spine-chilling vocal effects. But beware: harmonious combos may trigger "Horror Mode," transforming cheerful melodies into nightmarish soundscapes as characters mutate into grotesque, parasite-infected forms. Share your eerie creations or conquer community-designed challenges in dual portrait/landscape modes. With its vibrant graffiti-inspired art and seamless browser play, Phase 9 is perfect for on-the-go experimentation. Whether composing or surviving jump scares, this mod delivers a fresh, unsettling twist on music-making. Ready to mix, scare, and conquer? The madness awaits!`,
     thumbnail: '/games/sprunki9.webp',
     url: 'https://iframegame.com/embed/sprunki-phase-9/index.html',
     supportMobile: true,
@@ -220,7 +226,7 @@ export const games: Game[] = [
     sound: 5,
     difficulty: 5,
     overall: 5,
-    review: `Sprunki Phase 9 is a standout entry in the rhythm game genre, blending creative freedom with a uniquely eerie aesthetic. Built as a fan-made mod of Incredibox, it offers a robust music-creation toolkit where players drag and drop characters—each representing distinct beats, melodies, or effects—onto a mixing board to compose dynamic tracks. The game’s expanded sound library (featuring electronic, retro, and experimental genres) and intuitive interface cater to both casual players and audiophiles. Visually, Phase 9 leans into surreal, horror-inspired art, with characters redesigned to evoke tension through distorted animations and jarring color contrasts. This thematic shift enhances immersion but may overwhelm newcomers. The inclusion of community-driven features, like sharing custom levels and competing in player-designed challenges, adds longevity. However, the difficulty curve in later stages feels uneven, occasionally prioritizing shock value (e.g., sudden jump scares) over rhythmic precision. Technically, the Android version (1.61MB) runs smoothly, though the minimalist UI occasionally obscures advanced editing tools. Despite minor flaws, Sprunki Phase 9 excels as a platform for musical experimentation, offering a fresh, albeit unsettling, take on interactive rhythm games.`
+    review: `Sprunki Phase 9 reinvigorates the Incredibox formula with a fan-driven HTML5 twist, blending intuitive music creation with a haunting aesthetic. Players drag characters representing beats, melodies, and eerie vocal effects onto a dynamic soundboard to compose layered tracks spanning genres like electronic and retro synth. The mod introduces a "Horror Mode," triggered by specific combinations, which distorts visuals and audio into grotesque, parasite-themed animations and dissonant tones. While its minimalist UI ensures accessibility, advanced editing tools remain underutilized, and uneven difficulty spikes in community-designed levels may frustrate purists. Lightweight and browser-compatible, it excels as a platform-agnostic creative sandbox, though its reliance on shock value occasionally overshadows rhythmic cohesion.`
   },
   {
     id: 'space-war-3d',
