@@ -196,23 +196,7 @@ export const games: Game[] = [
 
 
 
-
-  {
-    id: 'sprunki-megalovania',
-    metaTitle: 'Sprunki Megalovania | Sprunki Megalovania Game | Sprunki',
-    title: 'Sprunki Megalovania',
-    description: `Unleash your inner composer in Sprunki Megalovania—a HTML5 game where Undertale’s iconic theme becomes your playground! Drag and drop beats, synths, and haunting vocals onto a dynamic grid to craft explosive remixes. Trigger combos to layer chaotic crescendos or mellow harmonies, then dive into sandbox mode to experiment freely. Perfect for Undertale fans and music enthusiasts, this browser-based gem requires no downloads—just creativity and a love for retro-inspired chaos. Whether you’re chasing nostalgia or crafting avant-garde beats, Sprunki Megalovania turns every click into a symphony. Ready to redefine Megalovania? The stage—and the chaos—is yours!`,
-    thumbnail: '/games/sprunki-megalovania.jpg',
-    url: 'https://www.gameflare.com/embed/sprunki-megalovania/',
-    supportMobile: true,
-    category: ['Sprunki'],
-    featured: true,
-    graphics: 4,
-    sound: 5,
-    difficulty: 3,
-    overall: 4,
-    review: `Sprunki Megalovania reimagines the Undertale Megalovania theme as an HTML5 music-creation sandbox, blending nostalgic inspiration with interactive experimentation. Players drag sound icons—representing beats, melodies, and vocal samples—onto a dynamic grid to layer tracks, with combo-activated effects adding complexity. The browser-based design ensures accessibility, though its minimalist UI lacks advanced editing tools, relegating deeper customization to trial-and-error exploration. While the sandbox mode fosters creativity, the absence of structured challenges or progression limits long-term engagement. Lightweight and responsive, it excels as a casual tool for fans to remix iconic motifs, but its reliance on player-driven content underscores untapped potential for guided musical storytelling or community sharing features.`
-  },
+  
   {
     id: 'cool-math-games',
     metaTitle: 'Cool Math Games For Kids | Cool Math Games | Cool Math',
