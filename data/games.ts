@@ -19,6 +19,22 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'memory-game',
+    metaTitle: 'Memory Game | Aliens Memory Game | Memory',
+    title: 'Aliens Memory Game',
+    description: `Test your cosmic recall with Aliens Memory Game—a free HTML5 challenge where quirky aliens hide in plain sight! Flip cards to uncover mischievous extraterrestrials, matching pairs to clear the grid before time runs out. Perfect for quick brain boosts, its intuitive design works seamlessly on phones, tablets, or desktops. Race against the clock in solo mode or compete with friends for high-score glory. With colorful visuals and zero downloads required, it’s ideal for family fun or on-the-go mental agility training. Ready to prove your memory is out-of-this-world? The aliens are waiting… if you dare to remember!`,
+    thumbnail: '/games/memory-game.jpg',
+    url: 'https://storage.y8.com/y8-studio/html5/akeemywka/aliens_memory_game',
+    supportMobile: true,
+    category: ['Casual'],
+    featured: true,
+    graphics: 3,
+    sound: 4,
+    difficulty: 5,
+    overall: 5,
+    review: `Aliens Memory Game offers a streamlined HTML5 memory-training experience with cross-platform accessibility. The core mechanic challenges players to match pairs of whimsical alien-themed cards, leveraging browser-based convenience for quick sessions. While the minimalist UI and touch-friendly design suit casual play, the lack of progressive difficulty tiers or power-ups limits long-term engagement. Visuals are vibrant but repetitive, with limited card designs reducing replay value. Performance is smooth on modern browsers, though ad interruptions between rounds disrupt immersion. Its educational potential for cognitive training is notable, yet niche appeal and simplistic structure position it best for younger audiences or brief mental exercises rather than dedicated gamers.`
+  },
+  {
     id: 'brick-breaker',
     metaTitle: 'Brick Breaker | Brick Breaker Classic | Brick Breaker Mania | Smash Bricks Game | Brick Breaker Master',
     title: 'Brick Breaker',
