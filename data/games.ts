@@ -19,6 +19,22 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'grandpa-run',
+    metaTitle: 'Grandpa Run 3D | Grandpa Run 3D Game | Grandpa Runner',
+    title: 'Grandpa Run 3D',
+    description: `Help Grandpa bust out of the hospital and chase love in Grandpa Run 3D! This HTML5 runner lets you swipe, jump, and dash through chaotic streets—dodge grumpy nurses, smash barriers, and grab coins to turbocharge your escape! Customize Grandpa with quirky outfits and upgrades like rocket shoes or shield buffs. No downloads, no ads—just pure browser-based chaos! Perfect for on-the-go thrills, its simple controls and retro 3D vibes appeal to casual gamers and speedrun enthusiasts alike. Can you outrun the chaos and reunite Grandpa with his true love? The wild sprint starts now!`,
+    thumbnail: '/games/grandpa-run.jpg',
+    url: 'https://media2.y8.com/y8-studio/unity_webgl_games/u53/Joll/grandpa_run_3d_v8/?key=y8&value=default',
+    supportMobile: false,
+    category: ['Adventure'],
+    featured: true,
+    graphics: 3,
+    sound: 3,
+    difficulty: 5,
+    overall: 5,
+    review: `Grandpa Run 3D revitalizes the endless-runner genre with HTML5 accessibility, offering fast-paced, browser-based gameplay. Players guide an elderly protagonist escaping a hospital, dodging obstacles via swipe controls (jump, slide, dash) while collecting coins to unlock power-ups and costumes. The 3D visuals and lighthearted tone balance humor and challenge, though repetitive level design and simplistic enemy AI limit long-term engagement. Its standout feature is an intuitive upgrade system, allowing customization of abilities like speed boosts and obstacle destruction. While ad interruptions disrupt immersion, the game’s cross-device compatibility and minimal load times make it ideal for casual sessions. A charming yet mechanically shallow entry best suited for quick, nostalgic play`
+  },
+  {
     id: 'memory-game',
     metaTitle: 'Memory Game | Aliens Memory Game | Memory',
     title: 'Aliens Memory Game',
