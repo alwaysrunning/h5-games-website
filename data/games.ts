@@ -24,7 +24,7 @@ export const games: Game[] = [
     title: 'Wibbox V1: Glibble Globbler',
     description: `Wibbox V1 (Glibble Globbler) is a music-creation game where players drag and drop icons onto characters to build layered beats and melodies, similar to Incredibox. Each character represents a sound (vocals, instruments, or effects)—place icons on them to start their part, or drag them downward to mute them. The game rewards experimentation, letting players mix quirky vocal chops, rhythms, and synth loops into full tracks.`,
     thumbnail: '/games/glibble-globbler.jpg',
-    url: 'https://kdata1.com/2025/02/wibbox-v1-glibble-globbler-incredibox',
+    url: 'https://kdata1.com/2025/02/wibbox-v1-glibble-globbler-incredibox/?key=y8&value=default',
     supportMobile: true,
     category: ['Creative'],
     featured: true,
