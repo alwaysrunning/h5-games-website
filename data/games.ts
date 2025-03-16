@@ -240,11 +240,6 @@ export const games: Game[] = [
     supportMobile: false,
     featured: true,
   },
-
-
-
-
-  
   {
     id: 'cool-math-games',
     metaTitle: 'Cool Math Games For Kids | Cool Math Games | Cool Math',
@@ -261,4 +256,4 @@ export const games: Game[] = [
     overall: 4,
     review: `Cool Math Games for Kids excels as an educational HTML5 web game, offering adaptive math challenges for ages 3–12. Its core mechanics focus on foundational arithmetic (addition, subtraction, multiplication, division) and advanced topics like fractions and exponents, delivered through mini-games such as timed drills and logic puzzles. The adaptive learning system tailors difficulty to user performance, ensuring progressive skill development. While the minimalist interface is intuitive, advanced features like mixed-operation modes require guided navigation for younger players. Lightweight and browser-compatible, it runs seamlessly across devices without downloads. Despite lacking narrative depth, its ad-free model and structured curriculum make it a reliable supplementary tool for math fluency.`
   },
-]; 
+];
