@@ -19,6 +19,22 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'glibble-globbler',
+    metaTitle: 'Wibbox V1: Glibble Globbler | Wibbox V1 | Glibble Globbler',
+    title: 'Wibbox V1: Glibble Globbler',
+    description: `Wibbox V1 (Glibble Globbler) is a music-creation game where players drag and drop icons onto characters to build layered beats and melodies, similar to Incredibox. Each character represents a sound (vocals, instruments, or effects)—place icons on them to start their part, or drag them downward to mute them. The game rewards experimentation, letting players mix quirky vocal chops, rhythms, and synth loops into full tracks.`,
+    thumbnail: '/games/glibble-globbler.jpg',
+    url: 'https://kdata1.com/2025/02/wibbox-v1-glibble-globbler-incredibox',
+    supportMobile: true,
+    category: ['Creative'],
+    featured: true,
+    graphics: 5,
+    sound: 5,
+    difficulty: 3,
+    overall: 5,
+    review: `Wibbox V1: Glibble Globbler innovates browser-based music creation, blending drag-and-drop simplicity with layered sound design. Players assign vocal chops, rhythms, and synth loops to characters, dynamically muting/activating tracks for real-time remixing. While its playful approach lowers entry barriers for novices, advanced users may crave deeper editing tools (e.g., BPM control, effect chains). The lack of export/share features limits collaborative potential, but its focus on experimental freedom shines—quirky sound palettes reward unexpected combinations. HTML5 optimization ensures smooth performance, though UI scaling issues plague smaller screens. A charming gateway to music production, ideal for casual tinkering over professional refinement.`
+  },
+  {
     id: 'grandpa-run',
     metaTitle: 'Grandpa Run 3D | Grandpa Run 3D Game | Grandpa Runner',
     title: 'Grandpa Run 3D',
@@ -74,7 +90,7 @@ export const games: Game[] = [
     thumbnail: '/games/sprunki-phase-15.jpg',
     url: 'https://iframegame.com/embed/sprunki-phase-15/index.html',
     supportMobile: false,
-    category: ['Sprunki'],
+    category: ['Creative'],
     featured: true,
     graphics: 3,
     sound: 4,
@@ -106,7 +122,7 @@ export const games: Game[] = [
     thumbnail: '/games/sprunki9.webp',
     url: 'https://iframegame.com/embed/sprunki-phase-9/index.html',
     supportMobile: true,
-    category: ['Sprunki'],
+    category: ['Creative'],
     featured: true,
     graphics: 4,
     sound: 5,
