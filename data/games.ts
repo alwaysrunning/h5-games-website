@@ -19,6 +19,23 @@ export interface Game {
 
 export const games: Game[] = [
   {
+    id: 'minecraft-squid-anomaly',
+    metaTitle: 'Minecraft Squid Anomaly',
+    title: 'Minecraft Squid Anomaly',
+    description: `Minecraft Squid Anomaly is a time-limited spot-the-difference game that challenges visual precision! Identify pixel-perfect anomalies in Minecraft-themed scenes, where incorrect taps deduct critical seconds, heightening tension. Difficulty escalates across levels—from color gradients to pixel-level discrepancies—testing split-second memory and focus. Features solo speedrun and competitive multiplayer modes, blending the iconic Minecraft aesthetic with hardcore puzzle logic.`,
+    thumbnail: '/games/minecraft-squid-anomaly.jpg',
+    url: 'https://play.wgplayground.com/ifr/62f89c0deacfaaa0e3981ae4992b0ffb?key=y8&value=default',
+    supportMobile: false,
+    category: ['Casual'],
+    featured: true,
+    graphics: 5,
+    sound: 2,
+    difficulty: 3,
+    overall: 5,
+    review: `Minecraft Squid Anomaly redefines spot-the-difference with punishing countdown penalties and escalating precision demands (5% to 0.5% variance). Its progressive difficulty sharpens cognitive stamina, but repetitive art assets risk long-term engagement. Flawless touch-response optimization contrasts with minimal onboarding, raising early frustration. Targets hardcore puzzle enthusiasts; lacks modding/workshop support for community creativity. A niche gem prioritizing ruthless skill refinement over casual appeal.`
+  },
+
+  {
     id: 'glibble-globbler',
     metaTitle: 'Wibbox V1: Glibble Globbler | Wibbox V1 | Glibble Globbler',
     title: 'Wibbox V1: Glibble Globbler',
