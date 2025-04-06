@@ -18,6 +18,23 @@ export interface Game {
 }
 
 export const games: Game[] = [
+
+  {
+    id: 'candy-pop-mania',
+    metaTitle: 'Candy Pop Mania',
+    title: 'Candy Pop Mania',
+    description: `Dive into Candy Pop Mania—a sugary HTML5 match-3 sensation! Swap candies to smash ice, unlock jelly, and conquer 200+ levels bursting with sweet challenges. Create explosive combos: match four for striped blasts, five for vortexes, and watch cascading candy chaos! Daily spins reward free boosters, while offline play lets you crush puzzles anywhere. Outsmart chocolate blocks and snowflake traps, or team up with friends for leaderboard glory. With zero downloads and eye-popping visuals, it’s perfect for quick brain teasers or family fun. Ready to satisfy your sweet tooth? The candy kingdom awaits your match-making magic!`,
+    thumbnail: '/games/candy-pop-mania.jpg',
+    url: 'https://play.wgplayground.com/ifr/ea4e382003e15f6f604541956bff1203?key=y8&value=default',
+    supportMobile: true,
+    category: ['Casual'],
+    featured: true,
+    graphics: 5,
+    sound: 5,
+    difficulty: 5,
+    overall: 5,
+    review: `Candy Pop Mania revitalizes the HTML5 match-3 genre with accessible browser-based gameplay and vibrant aesthetics. Players swap candies to complete objectives (e.g., clearing ice, collecting ingredients) across hundreds of levels, enhanced by power-ups like striped candies, color bombs, and vortexes. The adaptive difficulty curve balances casual and strategic play, though repetitive level design and predictable obstacles (e.g., jelly locks, chocolate barriers) diminish late-game innovation. Monetization relies on optional boosters and ads, which occasionally disrupt flow. HTML5 optimization ensures smooth cross-device performance, but minimalist UI lacks advanced features like custom difficulty settings. A competent entry for casual puzzle enthusiasts, prioritizing accessibility over depth.`
+  },
   {
     id: 'minecraft-squid-anomaly',
     metaTitle: 'Minecraft Squid Anomaly',
