@@ -18,7 +18,22 @@ export interface Game {
 }
 
 export const games: Game[] = [
-
+  {
+    id: 'sprunki-ultimate-deluxe-2',
+    metaTitle: 'Sprunki Ultimate Deluxe 2 | Sprunki Ultimate Deluxe',
+    title: 'Sprunki Ultimate Deluxe 2',
+    description: `Unleash your inner maestro in Sprunki Ultimate Deluxe 2—the HTML5 hit where drag-and-drop beats meet boundless creativity! Craft funky tracks by assigning quirky characters to vocals, drums, or retro synths. Mute tracks on-the-fly, experiment with Friday Night Funkin’ crossover cameos, and unlock eye-popping avatars with silky animations. No downloads, no ads—just instant browser jams! Perfect for family jam sessions or solo remix battles, its intuitive design rewards playful tinkering. Share your bops, challenge friends, or vibe to AI-generated loops. Ready to drop the ultimate beat? The stage—and the spotlight—are yours!`,
+    thumbnail: '/games/sprunki-ultimate-deluxe-2.jpg',
+    url: 'https://kdata1.com/2025/03/sprunki-ultimate-deluxe-2/?key=y8&value=default',
+    supportMobile: true,
+    category: ['Creative'],
+    featured: true,
+    graphics: 5,
+    sound: 5,
+    difficulty: 5,
+    overall: 5,
+    review: `Sprunki Ultimate Deluxe 2 elevates HTML5 music-creation gaming with a polished, fan-driven evolution of the Incredibox formula. Players drag characters onto a stage to layer vocals, beats, and synth loops, muting/activating tracks dynamically for real-time remixing. The mod introduces fresh characters, including crossover icons like Friday Night Funkin’’s Boyfriend, and refines audio balance with pro-grade mixing tools. While its minimalist UI ensures accessibility, advanced users may lament the absence of BPM controls or MIDI export. HTML5 optimization enables seamless cross-device play, though browser-based limitations constrain sound fidelity. A vibrant sandbox for casual creators, though lacking depth for professional workflows.`
+  },
   {
     id: 'candy-pop-mania',
     metaTitle: 'Candy Pop Mania',
